@@ -5,10 +5,10 @@
 window.AI_PLAYBOOK_CONFIG = {
   // ---- Supabase Edge Function proxy ----
   // Example: "https://abcd1234.supabase.co"
-  SUPABASE_URL: "https://YOUR_PROJECT.supabase.co",
+  SUPABASE_URL: "https://mogdnvxiudlvwnpxqnki.supabase.co",
 
-  // Anon (public) key from Project Settings → API. Safe to commit.
-  SUPABASE_ANON_KEY: "YOUR_ANON_KEY",
+  // Publishable (public) key from Project Settings → API. Safe to commit.
+  SUPABASE_ANON_KEY: "sb_publishable_LVRqEts8zYCAMDmqZvcjMg_fGSvrqyI",
 
   // Path to the deployed Edge Function (default matches supabase/functions/chat).
   CHAT_FUNCTION_PATH: "/functions/v1/chat",
