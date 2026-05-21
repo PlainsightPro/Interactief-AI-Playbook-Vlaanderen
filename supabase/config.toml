@@ -1,0 +1,4 @@
+project_id = "ai-playbook-viewer"
+
+[functions.chat]
+verify_jwt = false

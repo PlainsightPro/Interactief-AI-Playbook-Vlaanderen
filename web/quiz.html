@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Quiz · Identificeer uw organisatieprofiel · AI Playbook</title>
+  <meta name="description" content="6 korte vragen om uw AI-organisatieprofiel te bepalen — verbatim uit de Introductie tot het AI Playbook van Digitaal Vlaanderen." />
+  <meta name="theme-color" content="#FFE615" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23FFE615' rx='8'/%3E%3C/svg%3E" />
+  <script src="config.js"></script>
+</head>
+<body data-page="quiz">
+  <a class="skip-link" href="#content">Sla over naar inhoud</a>
+  <header id="topbar" class="topbar" role="banner"></header>
+
+  <main id="content">
+    <div class="quiz-shell">
+      <header class="section-head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
+        <div class="section-eyebrow" style="justify-content:center">Identificeer uw organisatieprofiel</div>
+        <h1>Welk profiel past het best bij uw organisatie?</h1>
+        <p class="text-soft" style="max-width:560px;margin:0 auto">
+          Zes korte vragen — verbatim uit de officiële <em>Introductie tot het AI Playbook</em> (p.&nbsp;8).
+          Dit is géén maturiteitsassessment. Tel uiteindelijk hoeveel keer u
+          <strong>A, B</strong> of <strong>C</strong> kiest.
+        </p>
+      </header>
+
+      <div id="quizMount" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer id="footer" class="site-footer" role="contentinfo"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+
+  <script type="module">
+    import "./src/main.js";
+    import { mountQuiz } from "./src/quiz.js";
+    document.addEventListener("DOMContentLoaded", () => mountQuiz("#quizMount"));
+  </script>
+</body>
+</html>

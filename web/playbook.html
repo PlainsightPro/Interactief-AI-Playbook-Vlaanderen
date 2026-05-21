@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mijn playbook · AI Playbook · Interactieve gids</title>
+  <meta name="description" content="Uw gepersonaliseerde stappenplan op basis van uw organisatieprofiel — pijlers, fasen en activiteiten in één doorzoekbare matrix." />
+  <meta name="theme-color" content="#FFE615" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23FFE615' rx='8'/%3E%3C/svg%3E" />
+  <script src="config.js"></script>
+</head>
+<body data-page="playbook">
+  <a class="skip-link" href="#content">Sla over naar inhoud</a>
+  <header id="topbar" class="topbar" role="banner"></header>
+
+  <div class="playbook-shell" id="playbookShell">
+    <main id="content" class="playbook-main">
+      <div id="playbookMount"></div>
+    </main>
+
+    <aside class="chat-panel" id="chatPanel"></aside>
+  </div>
+
+  <button class="chat-toggle-fab is-hidden" type="button" aria-label="Open AI-assistent">
+    <span data-icon="chat"></span>
+  </button>
+
+  <footer id="footer" class="site-footer" role="contentinfo"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+
+  <script type="module">
+    import "./src/main.js";
+    import { mountPlaybook } from "./src/playbook.js";
+    import { mountChat } from "./src/chat.js";
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      await mountPlaybook("#playbookMount");
+      await mountChat("#chatPanel");
+    });
+  </script>
+</body>
+</html>

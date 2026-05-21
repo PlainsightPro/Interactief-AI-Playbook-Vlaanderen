@@ -1,0 +1,256 @@
+{
+  "meta": {
+    "source": "AI_Playbook_ortcsk.pdf",
+    "title": "Introductie tot het AI Playbook",
+    "version": "mei 2026",
+    "publisher": "Digitaal Vlaanderen",
+    "pages": 20,
+    "reading_time_minutes": [30, 60]
+  },
+  "ambitie": {
+    "title": "De ambities van de Vlaamse regering",
+    "text": "Zoals het Vlaams Regeerakkoord benadrukt zal artificiële intelligentie (\"AI\") de komende jaren voor een enorme versnelling zorgen van de digitale transformatie binnen overheden in Vlaanderen. De ambitie van de Vlaamse overheid is dan ook duidelijk wat betreft artificiële intelligentie: overheden in Vlaanderen moeten de kracht van AI omarmen, op een verantwoorde manier."
+  },
+  "pijlers": [
+    {
+      "id": 1,
+      "slug": "visie-strategie",
+      "name": "Visie & strategie",
+      "short": "Visie & strategie",
+      "description": "Formuleren van een duidelijke AI-ambitie en onderliggende doelstellingen die worden vertaald in een AI roadmap, waarbij de rol van AI binnen de organisatie wordt bepaald en hoe AI bijdraagt aan het beleidsplan en de strategische doelstellingen van de organisatie."
+    },
+    {
+      "id": 2,
+      "slug": "innovatie",
+      "name": "Innovatie",
+      "short": "Innovatie",
+      "description": "Identificeren van waardevolle AI use cases voor specifieke opportuniteiten en uitdagingen in een kader waar innovatie centraal staat. Voorstellen van (Gen)AI-tools en opleidingsmiddelen om de persoonlijke productiviteit van werknemers te verbeteren."
+    },
+    {
+      "id": 3,
+      "slug": "betrouwbare-ai",
+      "name": "Betrouwbare AI",
+      "short": "Betrouwbare AI",
+      "description": "In kaart brengen van allerhande type risico's en controles die gepaard gaan met de implementatie van AI en deze proactief beheersen om de betrouwbaarheid en robuustheid van AI-systemen te verhogen, in naleving met relevante wetgeving zoals bijvoorbeeld de EU AI Act."
+    },
+    {
+      "id": 4,
+      "slug": "mens-organisatie",
+      "name": "Mens & organisatie",
+      "short": "Mens & organisatie",
+      "description": "Zorgen dat organisatie & medewerkers klaar zijn om (verder) met AI aan de slag te gaan. Duidelijk stellen van rollen, processen en verantwoordelijkheden, specifiek met betrekking tot AI. Bevorderen van vertrouwen in en de adoptie van AI binnen de organisatie, inclusief het verhogen van de AI-vaardigheden en -geletterdheid door middel van inspiratiesessies, training en opleiding."
+    },
+    {
+      "id": 5,
+      "slug": "architectuur",
+      "name": "AI-architectuur",
+      "short": "AI-architectuur",
+      "description": "Efficiënt en kosteneffectief gebruiken van AI-technologieën, door data en infrastructuur optimaal te beheren en in te richten."
+    }
+  ],
+  "phases": [
+    {
+      "id": 1,
+      "slug": "verkennen-experimenteren",
+      "name": "Verkennen & experimenteren",
+      "description": "De eerste fase draait om het vergroten van bewustzijn en het verkennen van de mogelijkheden van AI binnen de organisatie. Door middel van inspiratiesessies, praktijkvoorbeelden en kleine experimenten krijgen zowel medewerkers als management een eerste gevoel bij AI en de impact ervan op de organisatie."
+    },
+    {
+      "id": 2,
+      "slug": "keuzes-maken",
+      "name": "Keuzes maken",
+      "description": "Op basis van de eerste ervaringen en inzichten wordt in deze fase bepaald hoe AI waarde kan brengen voor de organisatie. Dit gebeurt door strategische keuzes te maken die aansluiten bij zowel de langetermijnvisie als de concrete operationele noden en bottom-up ervaringen."
+    },
+    {
+      "id": 3,
+      "slug": "capaciteiten-ontwikkelen",
+      "name": "Capaciteiten ontwikkelen",
+      "description": "AI kan pas succesvol worden ingezet als de organisatie beschikt over de juiste kennis, vaardigheden en structuren. In deze fase wordt gewerkt aan het ontwikkelen van AI-capaciteiten, zoals het trainen van medewerkers, het opzetten van governanceprocessen en het definiëren van rollen en verantwoordelijkheden."
+    },
+    {
+      "id": 4,
+      "slug": "implementeren",
+      "name": "Implementeren",
+      "description": "De implementatiefase richt zich op het daadwerkelijk toepassen van AI binnen de organisatie. Dit kan starten met kleinschalige pilots en proefprojecten om waardevolle leerervaringen op te doen. Vervolgens kunnen succesvolle initiatieven worden opgeschaald en geïntegreerd in bestaande processen, producten en diensten."
+    },
+    {
+      "id": 5,
+      "slug": "evalueren-opschalen",
+      "name": "Evalueren & opschalen",
+      "description": "Het succes van AI binnen een organisatie hangt af van continue monitoring en bijsturing. In deze fase worden de resultaten van AI-initiatieven geëvalueerd om te bepalen wat werkt en waar verbeteringen nodig zijn. Succesvolle toepassingen kunnen vervolgens verder worden opgeschaald en verankerd in de dagelijkse werking."
+    }
+  ],
+  "profiles": {
+    "verkenner": {
+      "name": "AI Verkenner",
+      "label": "AI Verkenner",
+      "tagline": "Eerste stappen, quick wins en vertrouwen winnen.",
+      "description": "Uw organisatie bevindt zich in de eerste fase van AI-adoptie. Focus op kleine stappen, quick wins en eenvoudige oplossingen om AI te introduceren en vertrouwen te winnen.",
+      "stappenplan_image": "stappenplan-verkenner.png"
+    },
+    "piloot": {
+      "name": "AI Piloot",
+      "label": "AI Piloot",
+      "tagline": "Klaar om te experimenteren en draagvlak te creëren.",
+      "description": "Uw organisatie heeft een basis gelegd en is klaar om met AI te experimenteren. Focus op het identificeren van waardevolle AI use cases en organisatiebreed draagvlak creëren.",
+      "stappenplan_image": "stappenplan-piloot.png"
+    },
+    "expert": {
+      "name": "AI Expert",
+      "label": "AI Expert",
+      "tagline": "Koploper in AI-adoptie, klaar om op te schalen.",
+      "description": "Uw organisatie is een koploper in AI-adoptie, en heeft reeds AI geïmplementeerd in bestaande processen en diensten. Focus op het opschalen van uw AI-werking.",
+      "stappenplan_image": "stappenplan-expert.png"
+    },
+    "persoonlijk": {
+      "name": "Persoonlijk",
+      "label": "Persoonlijk",
+      "tagline": "Stel zelf uw stappenplan samen.",
+      "description": "Het Persoonlijk plan biedt een leidraad die u zelf kan invullen en aanpassen. Hierin stelt u zelf uw stappenplan samen door activiteiten aan te duiden die u wil uitvoeren — over alle pijlers en fasen heen.",
+      "stappenplan_image": "stappenplan-persoonlijk.png"
+    }
+  },
+  "quiz": {
+    "title": "Identificeer uw organisatieprofiel",
+    "intro": "Om u te helpen bepalen welk organisatieprofiel het meest aansluit bij uw organisatie, kan u onderstaande vragenlijst gebruiken. Let op: dit is geen maturiteitsassessment en er zijn geen juiste of foute antwoorden. De vragen dienen enkel als leidraad om een helder beeld te krijgen van de huidige context en het startpunt van uw organisatie op vlak van AI. Dit helpt om de meest relevante en haalbare volgende stappen te bepalen.",
+    "scoring_instruction": "Tel het aantal antwoorden dat u hebt gekozen voor A, B of C.",
+    "result_legend": {
+      "A": "Meeste A's: uw organisatieprofiel leunt aan bij 'AI Verkenner'.",
+      "B": "Meeste B's: uw organisatieprofiel leunt aan bij 'AI Piloot'.",
+      "C": "Meeste C's: uw organisatieprofiel leunt aan bij 'AI Expert'."
+    },
+    "result_mapping": {
+      "A": "verkenner",
+      "B": "piloot",
+      "C": "expert"
+    },
+    "questions": [
+      {
+        "number": 1,
+        "text": "Hoeveel tijd kan uw organisatie vrijmaken voor AI-initiatieven?",
+        "answers": {
+          "A": "We hebben beperkte tijd en middelen; AI is nog een nieuwe uitdaging.",
+          "B": "Er is enige ruimte en budget beschikbaar, maar we moeten prioriteiten stellen.",
+          "C": "We hebben ruime middelen en een toegewijd team om AI volledig te integreren."
+        }
+      },
+      {
+        "number": 2,
+        "text": "Zijn er binnen uw organisatie interne teams of externe partners met AI-kennis?",
+        "answers": {
+          "A": "Nee, we moeten AI-expertise nog opbouwen.",
+          "B": "We hebben een beperkt aantal experts of toegang tot externe ondersteuning.",
+          "C": "Ja, we hebben sterke interne en externe AI-capaciteiten."
+        }
+      },
+      {
+        "number": 3,
+        "text": "Hoe groot is de betrokkenheid van het leiderschap bij AI-initiatieven?",
+        "answers": {
+          "A": "Het leiderschap is voorzichtig en heeft AI (nog) niet als prioriteit gesteld.",
+          "B": "Het leiderschap toont interesse en ondersteunt enkele initiatieven.",
+          "C": "Het leiderschap is een actieve sponsor van AI-projecten en stimuleert innovatie."
+        }
+      },
+      {
+        "number": 4,
+        "text": "Is er een breed draagvlak binnen de organisatie voor AI?",
+        "answers": {
+          "A": "Niet echt; veel collega's zijn nog onvoldoende vertrouwd met de mogelijkheden en risico's van AI.",
+          "B": "Redelijk; sommige afdelingen tonen enthousiasme, maar niet iedereen is overtuigd.",
+          "C": "Ja, AI wordt breed gedragen en er is enthousiasme om er mee aan de slag te gaan."
+        }
+      },
+      {
+        "number": 5,
+        "text": "Hoe sterk worden AI-oplossingen/-initiatieven momenteel ingezet om de strategische doelstellingen van uw organisatie te ondersteunen?",
+        "answers": {
+          "A": "AI speelt nog geen rol in het realiseren van onze strategie.",
+          "B": "AI begint een plaats te krijgen in onze strategische planning.",
+          "C": "AI is een integraal onderdeel van onze strategie en processen."
+        }
+      },
+      {
+        "number": 6,
+        "text": "Wat is het huidige niveau van AI-toepassingen binnen uw organisatie?",
+        "answers": {
+          "A": "We hebben nog geen AI toegepast in onze interne processen of externe dienstverlening.",
+          "B": "We hebben enkele piloten of use cases getest (in een sandbox omgeving), met wisselend succes.",
+          "C": "We hebben meerdere succesvolle projecten en toepassingen geoperationaliseerd."
+        }
+      }
+    ]
+  },
+  "disclaimers_uit_bron": [
+    {
+      "title": "Goed databeheer is essentieel",
+      "text": "Om AI succesvol te implementeren is databeheer (of datamanagement) essentieel. In dit playbook ligt de focus op AI, maar wordt de link maximaal gelegd naar bestaande documenten en richtlijnen rond thema's die cruciaal zijn voor het succesvol, veilig en betrouwbaar bouwen van AI use cases."
+    },
+    {
+      "title": "AI als middel, niet als doel",
+      "text": "Het inzetten van AI is geen doel op zich, maar een middel om dienstverlening te verbeteren, processen te optimaliseren en strategische doelstellingen te ondersteunen."
+    },
+    {
+      "title": "Verandering vraagt tijd",
+      "text": "(Verder) met AI aan de slag gaan is niet eenvoudig. Zelfs als alle stappen uit dit playbook volledig doorlopen worden, zal niet alles feilloos verlopen, en dat is normaal. Vergeet echter niet: elke stap is een stap vooruit!"
+    },
+    {
+      "title": "AI als parapluterm",
+      "text": "Dit playbook is van toepassing op AI-oplossingen in de brede zin van het woord — van eenvoudige automatiseringen, procesoptimalisaties en rule-based systemen, tot complexere toepassingen zoals generatieve AI, voorspellende modellen, en AI-systemen voor besluitvorming."
+    },
+    {
+      "title": "Het AI Playbook is een levend document",
+      "text": "Dit playbook is een levend document dat wordt bijgewerkt op basis van nieuwe inzichten, (technologische) ontwikkelingen en feedback uit de praktijk."
+    }
+  ],
+  "kritieke_succesfactoren": [
+    {
+      "number": 1,
+      "title": "Hanteer een gestructureerde aanpak",
+      "text": "De meeste organisaties formuleren AI-adoptie als een programma, project of gestructureerd initiatief, omwille van duidelijke structuur, formele rollen, zicht op middelen, risicobeheersing, meetbare doelen en heldere communicatie. Doorgaans duurt zo'n traject 1 tot 3 jaar — onthoud: elke stap is een stap vooruit."
+    },
+    {
+      "number": 2,
+      "title": "Voorzie voldoende tijd en middelen",
+      "text": "Een belangrijke voorwaarde om van start te kunnen gaan, is dat er iemand binnen uw organisatie het mandaat en de tijd heeft gekregen om het AI-initiatief uit te werken — de 'trekker'. Tijdsbesteding ligt doorgaans tussen 0,5 VTE en 1 VTE."
+    },
+    {
+      "number": 3,
+      "title": "Zorg voor leiderschapsondersteuning en een ondersteunende cultuur",
+      "text": "Het AI-initiatief heeft leiderschapsondersteuning nodig om succesvol te zijn. Het managementteam speelt een cruciale rol in het creëren van een cultuur waarin experimenteren, leren, en veranderen wordt aangemoedigd."
+    },
+    {
+      "number": 4,
+      "title": "Zorg voor een sterke samenwerking tussen business, IT en data/AI",
+      "text": "Succesvolle AI-implementatie vraagt om een nauwe samenwerking tussen business-, IT- en data-/AI-teams. Door deze teams van meet af aan samen te brengen, worden AI-oplossingen niet alleen strategisch relevant, maar ook technisch haalbaar en praktisch inzetbaar."
+    },
+    {
+      "number": 5,
+      "title": "Vermijd onnodige complexiteit",
+      "text": "Een meer AI-gedreven organisatie uitbouwen hoeft niet onnodig complex te zijn. Idealiter wordt voortgebouwd op wat al werkt binnen de organisatie, in plaats van volledig nieuwe structuren naast bestaande structuren uit te tekenen."
+    },
+    {
+      "number": 6,
+      "title": "Schakel (externe) begeleiding in waar nodig",
+      "text": "Dit playbook biedt concrete handvaten, templates en scripts. Hou er echter rekening mee dat u voor sommige stappen mogelijk (externe) hulp moet/kan inschakelen om u te begeleiden in de uitwerking."
+    },
+    {
+      "number": 7,
+      "title": "Beheer verwachtingen",
+      "text": "Veranderinitiatieven kunnen onzekerheid en weerstand oproepen. Transparante communicatie speelt een sleutelrol: maak duidelijk wat AI wel en niet kan bereiken, zowel op korte als lange termijn. AI is geen magische oplossing voor alle problemen, maar een hulpmiddel."
+    }
+  ],
+  "praktijkvoorbeeld": {
+    "name": "Het Columbus project",
+    "organization": "Departement Werk, Economie, Wetenschap, Innovatie en Sociale Economie (WEWIS)",
+    "year": 2024,
+    "introduction": "Columbus is een initiatief binnen Departement WEWIS, waarin we samen op ontdekkingsreis gaan om de mogelijkheden van generatieve AI te verkennen in onze organisatie en dagelijkse werking. In 2024 lag de nadruk op leren, inspireren en sensibiliseren, gecombineerd met experimenten binnen een vastgesteld kader.",
+    "key_takeaways": [
+      "Zet in op een goede communicatiecampagne — dit verhoogt de visibiliteit van het initiatief en de motivatie van werknemers.",
+      "Vraag om management betrokkenheid. Neem bv. het directiecomité als stuurgroep en maak verantwoordelijkheden van afdelingshoofden expliciet.",
+      "Leer en stuur al doende bij. Denk vanuit mogelijkheden en niet vanuit beperkingen. Experimenteren bevordert het leerproces.",
+      "Zet in op open en transparante communicatie. Benadruk dat iedereen nog in een leerproces zit en dat AI een evoluerend thema is."
+    ],
+    "inzet_mandagen": 325
+  }
+}

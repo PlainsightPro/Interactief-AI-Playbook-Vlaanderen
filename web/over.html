@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Over deze playbook · AI Playbook</title>
+  <meta name="description" content="Disclaimer, bronvermelding, privacy en verwijderverzoek voor de interactieve AI Playbook gids." />
+  <meta name="theme-color" content="#FFE615" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23FFE615' rx='8'/%3E%3C/svg%3E" />
+  <script src="config.js"></script>
+</head>
+<body data-page="over">
+  <a class="skip-link" href="#content">Sla over naar inhoud</a>
+  <header id="topbar" class="topbar" role="banner"></header>
+
+  <main id="content" class="over-shell">
+    <header class="reveal">
+      <div class="section-eyebrow">Over deze playbook</div>
+      <h1>Een interactieve gids door het AI Playbook van Digitaal Vlaanderen</h1>
+      <p class="text-soft" style="font-size:var(--fs-md)">
+        Deze webapp is een onafhankelijke, interactieve doorloop van de twee officiële documenten
+        van Digitaal Vlaanderen. Hieronder leest u precies wat we hergebruiken, hoe AI is ingezet,
+        en welke beperkingen u in acht moet nemen.
+      </p>
+    </header>
+
+    <div class="over-callout reveal">
+      <strong>In één zin:</strong> Deze gids vat het AI Playbook samen en maakt het bevraagbaar
+      via een AI-assistent. De officiële Vlaamse PDFs blijven de bron — verifieer essentiële informatie steeds daar.
+    </div>
+
+    <section id="disclaimer" class="reveal">
+      <h2>Volledige disclaimer</h2>
+
+      <h3>Wat deze gids wél is</h3>
+      <ul>
+        <li>Een gepersonaliseerde, interactieve samenvatting op basis van <strong>"Introductie tot het AI Playbook"</strong>
+          en <strong>"AI Playbook — Kernactiviteiten"</strong> (Digitaal Vlaanderen, versie mei 2026).</li>
+        <li>De inhoud is geherstructureerd per organisatieprofiel zodat lezers enkel zien wat voor hen relevant is.</li>
+        <li>Een AI-assistent helpt u dieper graven binnen uw scope.</li>
+      </ul>
+
+      <h3>Wat deze gids niet is</h3>
+      <ul>
+        <li><strong>Geen officiële uitgave</strong> van Digitaal Vlaanderen of de Vlaamse overheid. Niet gelieerd, niet gecommissioneerd.</li>
+        <li>Geen vervanging van de bron-PDFs. Bij twijfel raadpleegt u steeds de originele documenten.</li>
+        <li>Geen juridisch, audit- of beleidsadvies — louter een navigatie- en samenvattingshulpmiddel.</li>
+      </ul>
+
+      <h3>AI-gebruik</h3>
+      <ul>
+        <li><strong>Samenvattingen</strong> per sectie zijn (of worden) gegenereerd door <strong>Google Gemini Flash-Lite</strong>
+          via OpenRouter, met de oorspronkelijke PDF-tekst als bron.</li>
+        <li>De <strong>conversationele assistent</strong> in het rechterpaneel gebruikt hetzelfde model en proxy.</li>
+        <li>AI-antwoorden kunnen onjuist zijn. <strong>Verifieer essentiële informatie altijd aan de bron.</strong></li>
+        <li>De OpenRouter API-key wordt nooit naar uw browser verstuurd. De key leeft uitsluitend als <em>secret</em> in de Supabase Edge Function.</li>
+      </ul>
+
+      <h3>Bron-attribution</h3>
+      <p>
+        Alle inhoudelijke pijlers, fasen, activiteiten, profieldescriptions, quizvragen en
+        praktijkvoorbeelden komen uit het AI Playbook van Digitaal Vlaanderen.
+        © Vlaamse overheid · Digitaal Vlaanderen — AI Expertisecentrum, in samenwerking met KPMG en de Werkgroep AI-strategie.
+      </p>
+      <p><a href="https://www.vlaanderen.be/digitaal-vlaanderen" target="_blank" rel="noopener noreferrer">Bezoek Digitaal Vlaanderen →</a></p>
+    </section>
+
+    <section id="privacy" class="reveal">
+      <h2>Privacy &amp; e-mailgebruik</h2>
+
+      <h3>Waarom vragen we uw e-mailadres?</h3>
+      <p>
+        Om de AI-assistent te gebruiken vragen we uw <strong>bedrijfse-mail</strong>. Publieke domeinen (Gmail, Hotmail, Outlook, …)
+        worden niet aanvaard zodat we weten dat gebruik van de assistent vanuit een organisatorische context gebeurt.
+        Het e-mailadres wordt enkel gebruikt om gebruik op te volgen en u te kunnen contacteren bij significante updates.
+      </p>
+
+      <h3>Wat bewaren we?</h3>
+      <ul>
+        <li>Uw bedrijfse-mail in een Supabase-database (versleuteld at-rest), gekoppeld aan uw gekozen organisatieprofiel.</li>
+        <li>Een tijdstempel van eerste en laatste interactie.</li>
+        <li><strong>Geen</strong> chatgeschiedenis op de server — gesprekken blijven in uw eigen browser (localStorage).</li>
+      </ul>
+
+      <h3>Bewaartermijn</h3>
+      <p>
+        E-mails worden maximaal <strong>24 maanden</strong> bewaard. Na deze periode worden ze automatisch verwijderd.
+      </p>
+
+      <h3>Verwijderverzoek (GDPR)</h3>
+      <p>
+        Stuur een e-mail naar
+        <a href="mailto:info@plainsight.pro?subject=Verwijder%20mijn%20gegevens%20uit%20AI%20Playbook">info@plainsight.pro</a>
+        om uw gegevens onmiddellijk te laten verwijderen. We bevestigen verwijdering binnen 5 werkdagen.
+      </p>
+    </section>
+
+    <section class="reveal">
+      <h2>Versiehistoriek</h2>
+      <ul>
+        <li><strong>Mei 2026:</strong> eerste publieke release. Gebaseerd op AI Playbook versie mei 2026.</li>
+      </ul>
+    </section>
+
+    <section class="reveal" style="margin-top:var(--sp-12);text-align:center">
+      <a class="btn btn-primary btn-lg" href="quiz.html">
+        <span>Start de quiz</span>
+        <span class="icon" data-icon="arrowRight"></span>
+      </a>
+    </section>
+  </main>
+
+  <footer id="footer" class="site-footer" role="contentinfo"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+
+  <script type="module">
+    import "./src/main.js";
+  </script>
+</body>
+</html>

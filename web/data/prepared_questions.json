@@ -1,0 +1,62 @@
+{
+  "global": [
+    "Wat is het verschil tussen de profielen Verkenner, Piloot en Expert?",
+    "Hoe begin ik concreet met een AI-strategie in mijn entiteit?",
+    "Welke kritieke succesfactoren noemt het playbook?",
+    "Hoe bepaal ik welke AI-toepassingen onder de EU AI Act vallen?",
+    "Wat zijn de stappen om een eerste AI use case te identificeren?"
+  ],
+  "byProfile": {
+    "verkenner": [
+      "Welke quick wins zijn realistisch in de Verkennen-fase?",
+      "Hoe creëer ik draagvlak in mijn organisatie voor AI?",
+      "Welke richtlijnen voor (Gen)AI moet ik als eerste opstellen?",
+      "Hoe organiseer ik een inspiratiesessie over AI?"
+    ],
+    "piloot": [
+      "Hoe selecteer ik kandidaat-use-cases voor een pilootproject?",
+      "Wat hoort er in een business case voor een AI-project?",
+      "Hoe ga ik om met de EU AI Act bij een eerste piloot?",
+      "Welke rollen heb ik nodig om een use case te ontwikkelen?"
+    ],
+    "expert": [
+      "Hoe schaal ik bewezen use cases over de hele organisatie?",
+      "Hoe meet ik waarderealisatie van AI-projecten?",
+      "Welke governance-structuur past bij een opschalende AI-werking?",
+      "Wat is een agentische organisatie en hoe bereid ik er op voor?"
+    ],
+    "persoonlijk": [
+      "Hoe stel ik een eigen stappenplan samen?",
+      "Welke activiteiten zijn essentieel voor elke organisatie?",
+      "Hoe combineer ik elementen uit Verkenner en Piloot?",
+      "Welke activiteit zou een goede volgende stap voor mij zijn?"
+    ]
+  },
+  "byPillar": {
+    "1": [
+      "Hoe formuleer ik een goede AI-ambitie?",
+      "Welke indicatoren passen bij AI-strategiedoelen?",
+      "Hoe combineer ik top-down en bottom-up bij strategieontwikkeling?"
+    ],
+    "2": [
+      "Hoe prioriteer ik AI use cases?",
+      "Hoe meet ik het succes van persoonlijke productiviteitswinsten met GenAI?",
+      "Hoe zet ik een testgroep voor Copilot of vergelijkbare tools op?"
+    ],
+    "3": [
+      "Welke AI-systemen vallen volgens de EU AI Act in de hoog-risicocategorie?",
+      "Hoe stel ik een ethisch kader voor AI op?",
+      "Welke risico-categorieën onderscheidt het playbook?"
+    ],
+    "4": [
+      "Hoe motiveer ik medewerkers om met AI aan de slag te gaan?",
+      "Welke rollen heb ik nodig in een AI-team?",
+      "Hoe meet ik de impact van veranderinitiatieven?"
+    ],
+    "5": [
+      "Wat houdt 'architecturale gereedheid' op projectniveau in?",
+      "Hoe bewaak ik kwaliteit en continuïteit van een AI-systeem in operaties?",
+      "Wat is data-governance in een AI-context?"
+    ]
+  }
+}

@@ -1,0 +1,1474 @@
+=== AI_Playbook_ortcsk.pdf ===
+Total pages: 20
+
+=== TOC ===
+p3: Introductie tot het AI Playbook 
+p7: Het AI playbook toegepast op uw organisatie 
+  p7: Introductie tot de organisatieprofielen 
+  p8: Identificeer uw organisatieprofiel
+  p9: Gepersonaliseerd stappenplan 
+p15: Kritieke succesfactoren
+p18: AI in actie: Inspirerend praktijkvoorbeeld 
+p20: Volgende stappen 
+
+======================================================================
+PAGE 1
+======================================================================
+Introductie
+www.digitaalvlaanderen.be
+
+
+[Page 1 has 1 image(s)]
+  - image 0: xref=3487 w=722 h=945
+
+======================================================================
+PAGE 2
+======================================================================
+2
+Inhoudstafel
+LEESTIJD 30 MIN. - 60 MIN.
+Introductie tot het AI Playbook
+Versie: mei 2026 
+Introductie tot het AI Playbook 	
+3
+Het AI playbook toegepast op uw organisatie 	
+7
+Introductie tot de organisatieprofielen 	
+7
+Identificeer uw organisatieprofiel	
+8
+Gepersonaliseerd stappenplan 	
+9
+Kritieke succesfactoren	
+15
+AI in actie: Inspirerend praktijkvoorbeeld 	
+18
+Volgende stappen 	
+20
+
+
+======================================================================
+PAGE 3
+======================================================================
+3
+INTRODUCTIE TOT HET AI PLAYBOOK
+INTRODUCTIE TOT HET AI PLAYBOOK 
+DE AMBITIES VAN DE VLAAMSE REGERING/REGEERAKKOORD 
+Zoals het Vlaams Regeerakkoord benadrukt zal artificiële intelligentie (“AI”) de komende jaren voor een 
+enorme versnelling zorgen van de digitale transformatie binnen overheden in Vlaanderen. Artificiële 
+intelligentie biedt de Vlaamse overheid de volgende jaren een unieke kans om haar beleidswerking, interne 
+werking en externe dienstverlening ingrijpend te veranderen en te verbeteren. De Vlaamse overheid erkent het 
+belang van de snelle technologische ontwikkelingen rond AI en datatechnologie en streeft naar een proactieve, 
+slimme en inclusieve overheid.
+De Vlaamse overheid wil dan ook volop inzetten op de mogelijkheden die AI biedt. Het is essentieel om 
+in zetten op een data- en AI-gedreven overheid, op proactieve en slimme diensten, op onze digitale veiligheid 
+en op een inclusieve dienstverlening. Een eenduidige, sterke en afgestemde digitale strategie voor de Vlaamse 
+overheid als geheel en de andere overheden in Vlaanderen is daarin cruciaal. In dit document wordt er verder 
+gefocust op de rol van AI binnen dergelijke eenduidige digitale strategie.
+De ambitie van de Vlaamse overheid is dan ook duidelijk wat betreft artificiële intelligentie: overheden in 
+Vlaanderen moeten de kracht van AI omarmen, op een verantwoorde manier.
+Met het AI Expertisecentrum binnen Digitaal Vlaanderen vuren we die ambities aan en zorgen we ervoor 
+dat kennis uit innovatie en experimenten geborgd wordt en er richtlijnen om verantwoord met AI aan de slag 
+te gaan binnen de overheid uitgewerkt worden. Op die manier kunnen we het AI-tijdperk vol vertrouwen 
+ingaan, en vermijden we dat elke overheid apart leergeld moet betalen.
+Om de ambities van de Vlaamse regering kracht bij te zetten, ontwikkelde het AI Expertisecentrum in 
+samenwerking met KPMG en de leden van de Werkgroep AI-strategie het AI Playbook. Dit playbook richt zich 
+op het bieden van inzicht, begeleiding en handvaten omtrent de mogelijkheden die artificiële intelligentie biedt 
+voor overheden in Vlaanderen, wat potentiële risico’s kunnen zijn en hoe u een plan kan ontwikkelen om deze 
+mogelijkheden op een verantwoorde manier te realiseren.
+
+
+[Page 3 has 1 image(s)]
+  - image 0: xref=3196 w=797 h=128
+
+======================================================================
+PAGE 4
+======================================================================
+4
+INTRODUCTIE TOT HET AI PLAYBOOK
+DOEL EN OPZET VAN HET AI PLAYBOOK 
+Het AI Playbook is ontworpen om overheden in Vlaanderen te begeleiden bij het omarmen van AI, met als doel 
+een datagedreven en innovatieve overheid te realiseren. Het playbook biedt concrete handvaten om (verder) 
+met AI aan de slag te gaan, ongeacht of u de mogelijkheden van AI wil verkennen, wil experimenteren met 
+(Gen)AI, of wil opschalen naar een mature AI-werking waarin AI een prominente positie neemt. 
+Het AI Playbook biedt: 
+Begeleiding bij het 
+definiëren van duidelijke 
+doelen en prioriteiten 
+die de basis vormen 
+voor een effectieve AI-
+strategie. 
+Een realistisch 
+stappenplan om (verder) 
+met AI aan de slag te 
+gaan, afgestemd op uw 
+organisatie. 
+Een gedetailleerde 
+beschrijving van de 
+verschillende activiteiten 
+binnen het stappenplan, 
+inclusief raamwerken en 
+praktijkvoorbeelden, zodat 
+u vandaag kan starten 
+binnen uw organisatie. 
+WAT KUNT U VERWACHTEN VAN HET AI PLAYBOOK? 
+Het AI Playbook biedt een helder overzicht van waar uw organisatie vandaag staat en hoe deze kan evolueren 
+naar een meer AI-gedreven werking. Het bestaat uit twee complementaire documenten: 
+“Introductie tot het AI Playbook” (het document dat u nu leest) is ontworpen voor 
+een snelle oriëntatie en kan in minder dan één uur worden doorgenomen. Het biedt 
+inzicht in het waarom van het AI Playbook, de bouwstenen ervan, hoe u het kunt 
+toepassen op uw organisatie en waar u rekening mee moet houden alvorens van start 
+te gaan. 
+“Het AI Playbook” zoomt in op de specifieke en praktische activiteiten die uw 
+organisatie kan uitvoeren om AI effectief in te zetten of verder te implementeren. Dit 
+document is georganiseerd per pijler (hierover meer in volgende paragraaf) en biedt 
+gedetailleerde scripts, raamwerken, praktijkvoorbeelden en eindproduct-checklists om 
+u te ondersteunen bij de uitvoering van deze activiteiten. 
+Samen vormen deze documenten een overzichtelijke toolkit om uw organisatie stapsgewijs te begeleiden in 
+haar AI-reis. 
+1
+2
+3
+
+
+[Page 4 has 2 image(s)]
+  - image 0: xref=53 w=96 h=135
+  - image 1: xref=54 w=96 h=135
+
+======================================================================
+PAGE 5
+======================================================================
+5
+INTRODUCTIE TOT HET AI PLAYBOOK
+DE 5 PIJLERS VAN HET AI PLAYBOOK 
+Pijler 1: Visie & strategie 
+Formuleren van een duidelijke AI-ambitie en onderliggende doelstellingen 
+die worden vertaald in een AI roadmap, waarbij de rol van AI binnen de 
+organisatie wordt bepaald en hoe AI bijdraagt aan het beleidsplan en de 
+strategische doelstellingen van de organisatie. 
+Pijler 2: Innovatie   
+Identificeren van waardevolle AI use cases voor specifieke 
+opportuniteiten en uitdagingen in een kader waar innovatie centraal 
+staat. Voorstellen van (Gen)AI-tools en opleidingsmiddelen om de 
+persoonlijke productiviteit van werknemers te verbeteren.  
+Pijler 3: Betrouwbare AI 
+In kaart brengen van allerhande type risico’s en controles die 
+gepaard gaan met de implementatie van AI en deze proactief 
+beheersen om de betrouwbaarheid en robuustheid van AI-systemen 
+te verhogen, in naleving met relevante wetgeving zoals bijvoorbeeld 
+de EU AI Act.
+Pijler 4: Mens & organisatie  
+Zorgen dat organisatie & medewerkers klaar zijn om (verder) met 
+AI aan de slag te gaan. Duidelijk stellen van rollen, processen en 
+verantwoordelijkheden, specifiek met betrekking tot AI.  
+Bevorderen van vertrouwen in en de adoptie van AI binnen de 
+organisatie, inclusief het verhogen van de AI-vaardigheden en 
+-geletterdheid door middel van inspiratiesessies, training en opleiding.  
+Pijler 5: AI-architectuur  
+Efficiënt en kosteneffectief gebruiken van AI-technologieën, door data en 
+infrastructuur optimaal te beheren en in te richten. 
+PIJLERS
+
+
+======================================================================
+PAGE 6
+======================================================================
+6
+INTRODUCTIE TOT HET AI PLAYBOOK
+•	 Goed databeheer is essentieel: Om AI succesvol te implementeren is databeheer (of 
+datamanagement) – denk hierbij aan activiteiten zoals bijvoorbeeld datakwaliteitsbeheer, data 
+governance, metadata management, …. – essentieel. Hoewel de meeste entiteiten hier al ervaring 
+mee hebben, brengt de integratie van AI vaak extra complexiteit met zich mee. In dit playbook ligt 
+de focus op AI, maar wordt de link maximaal gelegd naar bestaande documenten en richtlijnen 
+rond thema’s die cruciaal zijn voor het succesvol, veilig en betrouwbaar bouwen van AI use cases, 
+zoals bijvoorbeeld databeheer, gegevensbescherming en cybersecurity. 
+•	 AI als middel, niet als doel:  Het inzetten van AI is geen doel op zich, maar een middel om 
+dienstverlening te verbeteren, processen te optimaliseren en strategische doelstellingen te 
+ondersteunen. AI moet steeds in functie staan van de noden en ambities van de organisatie en op 
+een doordachte manier worden geïntegreerd. Een succesvolle AI-strategie vertrekt daarom vanuit 
+reële uitdagingen en kansen, niet vanuit de technologie zelf.
+•	 Verandering vraagt tijd: (Verder) met AI aan de slag gaan is niet eenvoudig. Zelfs als alle stappen 
+uit dit playbook volledig doorlopen worden, zal niet alles feilloos verlopen, en dat is normaal. Dit 
+gaat zowel om een verandering op organisatieniveau, als ook om een verandering op individueel 
+niveau van de werknemer. Ieder individu en iedere organisatie heeft hier zijn/haar eigen tijdslijn in. 
+Vergeet echter niet: elke stap is een stap vooruit! 
+•	 AI als parapluterm: Dit playbook is van toepassing op AI-oplossingen in de brede zin van 
+het woord. Hiermee bedoelen we alle mogelijke toepassingen van AI, gaande van eenvoudige 
+automatiseringen, procesoptimalisaties en rule based systemen, tot complexere toepassingen zoals 
+generatieve AI, voorspellende modellen, en AI-systemen voor besluitvorming. 
+•	 Het AI Playbook is een levend document: Dit playbook is een levend document dat wordt 
+bijgewerkt op basis van nieuwe inzichten, (technologische) ontwikkelingen en feedback uit de 
+praktijk. In deze eerste versie ligt de focus voornamelijk op de organisatorische aspecten van 
+AI-adoptie. In een volgende versie van het playbook zullen we dieper ingaan op de technische 
+dimensies, waaronder AI-architectuur, infrastructuur en operationele implementatie.
+ DISCLAIMERS BIJ HET AI PLAYBOOK 
+
+
+======================================================================
+PAGE 7
+======================================================================
+HET AI PLAYBOOK TOEGEPAST OP UW ORGANISATIE 
+7
+HET AI PLAYBOOK TOEGEPAST OP 
+UW ORGANISATIE 
+Elke organisatie heeft haar eigen unieke situatie en prioriteiten als het gaat om het implementeren van AI. 
+Om ervoor te zorgen dat iedere lezer de juiste (diepgang aan) informatie aangeboden krijgt, wordt rekening 
+gehouden met drie organisatieprofielen.
+In dit hoofdstuk kaderen we drie organisatieprofielen en leggen we uit hoe u kunt bepalen welk profiel het 
+best bij uw organisatie past. Daarnaast bieden we een bijhorend stappenplan met activiteiten die u kunt 
+volgen om AI succesvol binnen uw organisatie te implementeren.
+INTRODUCTIE TOT DE ORGANISATIEPROFIELEN 
+Uw organisatie 
+bevindt zich in de 
+eerste fase van 
+AI-adoptie. Focus op 
+kleine stappen, quick 
+wins en eenvoudige 
+oplossingen om AI te 
+introduceren en 
+vertrouwen te 
+winnen. 
+Uw organisatie heeft 
+een basis gelegd en is 
+klaar om met AI te 
+experimenteren. 
+Focus op het 
+identiﬁceren van 
+waardevolle AI use 
+cases en 
+organisatiebreed 
+draagvlak creëren. 
+Uw organisatie is een 
+koploper in AI-adoptie, 
+en heeft reeds AI 
+geïmplementeerd in 
+bestaande processen 
+en diensten. Focus op 
+het opschalen van uw 
+AI-werking. 
+AI VERKENNER
+AI PILOOT
+AI EXPERT
+
+
+[Page 7 has 4 image(s)]
+  - image 0: xref=384 w=797 h=167
+  - image 1: xref=364 w=113 h=186
+  - image 2: xref=374 w=112 h=186
+  - image 3: xref=374 w=112 h=186
+
+======================================================================
+PAGE 8
+======================================================================
+HET AI PLAYBOOK TOEGEPAST OP UW ORGANISATIE 
+8
+IDENTIFICEER UW ORGANISATIEPROFIEL
+Om u te helpen bepalen welk organisatieprofiel het meest aansluit bij uw organisatie, kan u onderstaande 
+vragenlijst gebruiken. Let op: dit is geen maturiteitsassessment en er zijn geen juiste of foute antwoorden. De 
+vragen dienen enkel als leidraad om een helder beeld te krijgen van de huidige context en het startpunt van 
+uw organisatie op vlak van AI. Dit helpt om de meest relevante en haalbare volgende stappen te bepalen.
+Tel het aantal antwoorden dat u hebt gekozen voor A, B of C. 
+Meeste A’s: uw 
+organisatieprofiel leunt  
+aan bij ‘AI Verkenner’. 
+Meeste B’s: uw 
+organisatieprofiel leunt  
+aan bij ‘AI Piloot’. 
+Meeste C’s: uw 
+organisatieprofiel leunt 
+aan bij ‘AI Expert’. 
+Hoeveel tijd kan uw organisatie 
+vrijmaken voor AI-initiatieven? 
+	
+□
+A. We hebben beperkte tijd en middelen; AI is nog 
+een nieuwe uitdaging. 
+	
+□
+B. Er is enige ruimte en budget beschikbaar, maar 
+we moeten prioriteiten stellen. 
+	
+□
+C. We hebben ruime middelen en een toegewijd 
+team om AI volledig te integreren. 
+Zijn er binnen uw organisatie interne 
+teams of externe partners met AI-kennis? 
+	
+□
+A. Nee, we moeten AI-expertise nog opbouwen. 
+	
+□
+B. We hebben een beperkt aantal experts of 
+toegang tot externe ondersteuning. 
+	
+□
+C. Ja, we hebben sterke interne en externe AI-
+capaciteiten. 
+Hoe groot is de betrokkenheid van het 
+leiderschap bij AI-initiatieven? 
+	
+□
+A. Het leiderschap is voorzichtig en heeft AI (nog) 
+niet als prioriteit gesteld. 
+	
+□
+B. Het leiderschap toont interesse en ondersteunt 
+enkele initiatieven. 
+	
+□
+C. Het leiderschap is een actieve sponsor van AI-
+projecten en stimuleert innovatie. 
+Is er een breed draagvlak binnen de 
+organisatie voor AI? 
+	
+□
+A. Niet echt; veel collega’s zijn nog onvoldoende 
+vertrouwd met de mogelijkheden en risico’s van AI. 
+	
+□
+B. Redelijk; sommige afdelingen tonen 
+enthousiasme, maar niet iedereen is overtuigd. 
+	
+□
+C. Ja, AI wordt breed gedragen en er is 
+enthousiasme om er mee aan de slag te gaan. 
+Hoe sterk worden AI-oplossingen/ 
+-initiatieven momenteel ingezet om 
+de strategische doelstellingen van uw 
+organisatie te ondersteunen? 
+	
+□
+A. AI speelt nog geen rol in het realiseren van onze 
+strategie. 
+	
+□
+B. AI begint een plaats te krijgen in onze 
+strategische planning. 
+	
+□
+C. AI is een integraal onderdeel van onze strategie 
+en processen. 
+Wat is het huidige niveau van AI-
+toepassingen binnen uw organisatie? 
+	
+□
+A. We hebben nog geen AI toegepast in onze 
+interne processen of externe dienstverlening. 
+	
+□
+B. We hebben enkele piloten of use cases getest (in 
+een sandbox omgeving), met wisselend succes. 
+	
+□
+C. We hebben meerdere succesvolle projecten en 
+toepassingen geoperationaliseerd. 
+Heeft u meer tijd en wilt u een diepgaander inzicht in de AI-context van uw organisatie?  
+Vul dan hier de AI-readiness enquête in en ontvang uw organisatieprofiel per pijler.
+
+
+======================================================================
+PAGE 9
+======================================================================
+HET AI PLAYBOOK TOEGEPAST OP UW ORGANISATIE 
+9
+GEPERSONALISEERD STAPPENPLAN 
+Hieronder worden de vijf fasen beschreven die organisaties begeleiden in hun AI-reis, en de basis vormen voor 
+de stappenplannen. Elke fase bevat specifieke activiteiten per pijler en afgestemd op het organisatieprofiel.
+1.	 Verkennen & experimenteren: De eerste fase draait om het vergroten van bewustzijn en het verkennen 
+van de mogelijkheden van AI binnen de organisatie. Door middel van inspiratiesessies, praktijkvoorbeelden 
+en kleine experimenten krijgen zowel medewerkers als management een eerste gevoel bij AI en de impact 
+ervan op de organisatie. Dit helpt niet alleen om interesse te wekken, maar ook om een breder draagvlak 
+te creëren. De inzichten uit deze verkenning vormen een waardevolle basis voor verdere strategische 
+keuzes.
+2.	Keuzes maken: Op basis van de eerste ervaringen en inzichten wordt in deze fase bepaald hoe AI waarde 
+kan brengen voor de organisatie. Dit gebeurt door strategische keuzes te maken die aansluiten bij zowel 
+de langetermijnvisie als de concrete operationele noden en bottom-up ervaringen. Dit hoeft niet direct 
+te resulteren in een grootschalige strategie, maar kan ook beperkt blijven tot bewuste strategische en 
+pragmatische keuzes maken, bijvoorbeeld over waar en hoe AI wel én niet ingezet zal worden. Omdat de 
+AI-ontwikkelingen snel gaan, is deze strategische fase niet eenmalig, maar kan deze periodiek hernomen 
+worden op basis van nieuwe inzichten en (technologische) evoluties.
+3.	Capaciteiten ontwikkelen: AI kan pas succesvol worden ingezet als de organisatie beschikt over 
+de juiste kennis, vaardigheden en structuren. In deze fase wordt gewerkt aan het ontwikkelen van AI-
+capaciteiten, zoals het trainen van medewerkers, het opzetten van governanceprocessen en het definiëren 
+van rollen en verantwoordelijkheden. Dit is geen eenmalige oefening, maar een continu proces waarbij 
+de organisatie haar AI-maturiteit geleidelijk opbouwt en aanpast aan nieuwe inzichten, technologieën en 
+regelgeving.
+4.	Implementeren: De implementatiefase richt zich op het daadwerkelijk toepassen van AI binnen de 
+organisatie. Dit kan starten met kleinschalige pilots en proefprojecten om waardevolle leerervaringen op 
+te doen. Vervolgens kunnen succesvolle initiatieven worden opgeschaald en geïntegreerd in bestaande 
+processen, producten en diensten. De implementatie is geen lineair proces, maar een iteratief traject 
+waarin inzichten uit eerdere toepassingen worden meegenomen om AI-oplossingen verder te verfijnen en 
+optimaliseren.
+5.	Evalueren & opschalen: Het succes van AI binnen een organisatie hangt af van continue monitoring en 
+bijsturing. In deze fase worden de resultaten van AI-initiatieven geëvalueerd om te bepalen wat werkt en 
+waar verbeteringen nodig zijn. Succesvolle toepassingen kunnen vervolgens verder worden opgeschaald 
+en verankerd in de dagelijkse werking. Tegelijkertijd zorgt een structurele aanpak voor monitoring en 
+rapportage ervoor dat AI-toepassingen blijven bijdragen aan de strategische doelstellingen. Net zoals de 
+andere stappen, is deze stap ook een iteratief proces.
+CAPACITEITEN 
+ONTWIKKELEN
+EVALUEREN & 
+OPSCHALEN
+VERKENNEN & 
+EXPERIMENTEREN
+KEUZES MAKEN
+IMPLEMENTEREN
+
+
+======================================================================
+PAGE 10
+======================================================================
+HET AI PLAYBOOK TOEGEPAST OP UW ORGANISATIE 
+10
+Hoewel de vijf fasen een lineaire structuur suggereren, kan het proces van AI-adoptie zowel iteratief als 
+flexibel worden benaderd. Sommige organisaties kiezen ervoor om de fasen stap-voor-stap te implementeren 
+over een langere periode, waarbij ze gericht werken aan het verkennen, ontwikkelen en opschalen van AI. 
+Andere organisaties hanteren een meer agile aanpak, waarbij ze deze fasen meerdere keren doorlopen 
+naarmate nieuwe behoeften, kansen en technologieën zich aandienen. 
+STAPPENPLAN PER ORGANISATIEPROFIEL
+De onderstaande figuren geven een overzicht van de concrete activiteiten die per fase in de AI-reis kunnen 
+worden uitgevoerd, voor elk van de organisatieprofielen. In Het AI Playbook kan u in detail de activiteiten per 
+pijler doornemen.
+Dit is louter een leidraad, en kan door de organisatie zelf ingevuld en aangepast worden. Hiervoor is het plan 
+“Persoonlijk” voorzien, waarin u zelf uw stappenplan kan samenstellen door activiteiten aan te duiden die u 
+wil uitvoeren. 
+
+
+======================================================================
+PAGE 11
+======================================================================
+HET AI PLAYBOOK TOEGEPAST OP UW ORGANISATIE 
+11
+AI Verkenner 
+PERSOON-
+LIJKE 
+PRODUC-
+TIVITEIT
+PERSOON-
+LIJKE 
+PRODUC-
+TIVITEIT
+AI USE
+ CASES
+AI USE
+ CASES
+VERANDER
+MANAGE-
+MENT
+VERANDER
+MANAGE-
+MENT
+ORGANISA-
+TIEMODEL
+ORGANISA-
+TIEMODEL
+Formuleer een AI-strategie 
+Formuleer een AI-strategie 
+Geef inspiratiesessies 
+Geef inspiratiesessies 
+Neem richtlijnen aan voor het 
+gebruik van (Gen)AI
+Neem richtlijnen aan voor het 
+gebruik van (Gen)AI
+Creëer bewustzijn 
+Creëer bewustzijn 
+Motiveer medewerkers
+Motiveer medewerkers
+Analyseer het huidige 
+organisatiemodel
+Analyseer het huidige 
+organisatiemodel
+Identiﬁ ceer AI-systemen 
+Identiﬁ ceer AI-systemen 
+Bepaal de impact van de EU AI Act
+Bepaal de impact van de EU AI Act
+Identiﬁ ceer AI use cases
+Identiﬁ ceer AI use cases
+Onboard een testgroep
+Onboard een testgroep
+Identiﬁ ceer potentiële 
+productiviteitswinsten
+Identiﬁ ceer potentiële 
+productiviteitswinsten
+VERKENNEN & 
+EXPERIMENTEREN
+KEUZES MAKEN
+CAPACITEITEN 
+ONTWIKKELEN
+IMPLEMENTEREN
+EVALUEREN & 
+OPSCHALEN
+ VISIE & STRATEGIE 
+ VISIE & STRATEGIE 
+INNOVATIE  
+INNOVATIE  
+BETROUWBARE AI 
+BETROUWBARE AI 
+Begrijp AI-architectuur en maak 
+een eerste inschatting
+Begrijp AI-architectuur en maak 
+een eerste inschatting
+Leg verwachtingen en strategie 
+vast
+Leg verwachtingen en strategie 
+vast
+Probleemvalidatie
+Probleemvalidatie
+Architecturale 
+gereedheid op 
+projectniveau
+Architecturale 
+gereedheid op 
+projectniveau
+AI-systeem-
+categorisering
+AI-systeem-
+categorisering
+MENS & 
+ORGANISATIE 
+MENS & 
+ORGANISATIE 
+ARCHITECTUUR
+ARCHITECTUUR
+
+
+======================================================================
+PAGE 12
+======================================================================
+HET AI PLAYBOOK TOEGEPAST OP UW ORGANISATIE 
+12
+AI Piloot 
+Formuleer een AI- strategie 
+Geef inspiratiesessies 
+Vier succes & erken inspanningen
+Vier succes & erken inspanningen
+Volg de impact van 
+organisatorische veranderingen op
+Volg de impact van 
+organisatorische veranderingen op
+Stel een communicatie- en 
+veranderplan op
+Stel een communicatie- en 
+veranderplan op
+Voorzie opleiding & ondersteuning 
+aan medewerkers
+Voorzie opleiding & ondersteuning 
+aan medewerkers
+Piloteer de aanpassingen aan het 
+organisatiemodel op enkele use 
+cases
+Piloteer de aanpassingen aan het 
+organisatiemodel op enkele use 
+cases
+Neem richtlijnen aan voor het gebruik van 
+(Gen)AI
+Stel business cases op en valideer 
+deze 
+Stel business cases op en valideer 
+deze 
+Creëer bewustzijn 
+Volg de impact van 
+veranderinitiatieven op 
+Volg de impact van 
+veranderinitiatieven op 
+Deel AI-systemen op in de juiste 
+risicoclassiﬁ catie
+Deel AI-systemen op in de juiste 
+risicoclassiﬁ catie
+Motiveer medewerkers
+Analyseer het huidige organisatiemodel
+Bepaal het gewenst (AI-)
+organisatiemodel
+Bepaal het gewenst (AI-)
+organisatiemodel
+Neem een ethisch kader aan voor
+AI-systemen
+Neem een ethisch kader aan voor
+AI-systemen
+Identifi ceer AI-systemen 
+Bepaal de impact van de EU AI Act
+Bepaal de risicostrategie van uw 
+organisatie
+Bepaal de risicostrategie van uw 
+organisatie
+Volg de betrouwbaarheid en het 
+veilig gebruik van AI-systemen op
+Volg de betrouwbaarheid en het 
+veilig gebruik van AI-systemen op
+Identifi ceer AI use cases
+Onboard een testgroep
+Onboard een testgroep
+Maak een lijst van functies of 
+personas
+Maak een lijst van functies of 
+personas
+Identifi ceer potentiële 
+productiviteitswinsten
+Schaal individuele 
+productiviteitswinsten 
+Schaal individuele 
+productiviteitswinsten 
+Volg het (succes van het) gebruik 
+van GenAI op
+Volg het (succes van het) gebruik 
+van GenAI op
+Prioriteer & plan AI use cases
+Prioriteer & plan AI use cases
+Ontwikkel de AI use cases 
+Ontwikkel de AI use cases 
+Volg de waarderealisatie van AI 
+use cases op
+Volg de waarderealisatie van AI 
+use cases op
+Volg de realisatie van (AI-) 
+doelstellingen op
+Volg de realisatie van (AI-) 
+doelstellingen op
+Processen
+Processen
+Positionering
+Positionering
+Rollen & 
+functies
+Rollen & 
+functies
+CAPACITEITEN 
+ONTWIKKELEN
+EVALUEREN & 
+OPSCHALEN
+IMPLEMENTEREN
+VERKENNEN & 
+EXPERIMENTEREN
+KEUZES MAKEN
+Begrijp AI-architectuur en maak een 
+eerste inschatting
+Leg verwachtingen en strategie vast
+Bewaak de data
+Bewaak de data
+Bewaak kwaliteit en continuïteit 
+in operaties
+Bewaak kwaliteit en continuïteit 
+in operaties
+Stuur op technologie- en 
+leverancierskeuzes
+Stuur op technologie- en 
+leverancierskeuzes
+Documenteer de processen
+Documenteer de processen
+Probleemvalidatie
+Architecturale 
+gereedheid op 
+projectniveau
+Valideer vóór 
+live te gaan
+Valideer vóór 
+live te gaan
+AI-systeem-
+categorisering
+Begeleid de 
+ontwikkeling met 
+architecturale 
+sturing
+Begeleid de 
+ontwikkeling met 
+architecturale 
+sturing
+PERSOON-
+LIJKE 
+PRODUC-
+TIVITEIT
+PERSOON-
+LIJKE 
+PRODUC-
+TIVITEIT
+AI USE
+ CASES
+AI USE
+ CASES
+VERANDER
+MANAGE-
+MENT
+VERANDER
+MANAGE-
+MENT
+ORGANISA-
+TIEMODEL
+ORGANISA-
+TIEMODEL
+ VISIE & STRATEGIE 
+ VISIE & STRATEGIE 
+INNOVATIE  
+INNOVATIE  
+BETROUWBARE AI 
+BETROUWBARE AI 
+MENS & 
+ORGANISATIE 
+MENS & 
+ORGANISATIE 
+ARCHITECTUUR
+ARCHITECTUUR
+
+
+======================================================================
+PAGE 13
+======================================================================
+HET AI PLAYBOOK TOEGEPAST OP UW ORGANISATIE 
+13
+AI Expert 
+Formuleer een AI-strategie 
+Geef inspiratiesessies 
+Vier succes & erken inspanningen
+Volg de impact van organisatorische 
+veranderingen op
+Stel een communicatie- en 
+veranderplan op
+Voorzie opleiding & ondersteuning aan 
+medewerkers
+Begeleid medewerkers 
+Begeleid medewerkers 
+Piloteer de aanpassingen aan het 
+organisatiemodel op enkele use cases
+Neem richtlijnen aan voor het gebruik van 
+(Gen)AI
+Stel business cases op en valideer deze 
+Creëer bewustzijn 
+Volg de impact van veranderinitiatieven 
+op 
+Verﬁ jn het organisatiemodel 
+verder en rol uit
+Verﬁ jn het organisatiemodel 
+verder en rol uit
+Deel AI-systemen op in de juiste 
+risicoclassifi catie
+Ontwikkel een AI roadmap 
+Ontwikkel een AI roadmap 
+Motiveer medewerkers
+Analyseer het huidige organisatiemodel
+Bepaal het gewenst (AI-)organisatiemodel
+Neem een ethisch kader aan voor 
+AI-systemen
+Identifi ceer AI-systemen 
+Begrijp AI-architectuur en maak een 
+eerste inschatting
+Leg verwachtingen en strategie vast
+Bewaak de data
+Bewaak kwaliteit en continuïteit in 
+operaties
+Kijk vooruit: de agentische 
+organisatie
+Kijk vooruit: de agentische 
+organisatie
+Stuur op technologie- en 
+leverancierskeuzes
+Documenteer de processen
+Volg de architecturale gezondheid 
+van AI-systemen op
+Volg de architecturale gezondheid 
+van AI-systemen op
+Bepaal de impact van de EU AI Act
+Bepaal de risicostrategie van uw 
+organisatie
+Implementeer een risico- en 
+controleraamwerk
+Implementeer een risico- en 
+controleraamwerk
+Volg de betrouwbaarheid en het veilig 
+gebruik van AI-systemen op
+Identifi ceer AI use cases
+Onboard een testgroep
+Maak een lijst van functies of personas
+Identifi ceer potentiële 
+productiviteitswinsten
+Schaal individuele productiviteitswinsten 
+Volg het (succes van het) gebruik van 
+GenAI op
+Prioriteer & plan AI use cases
+Ontwikkel de AI use cases 
+Volg de waarderealisatie van AI 
+use cases op
+Volg de realisatie van (AI-) doelstellingen 
+op
+Dienstver-
+leningsmodel
+Dienstver-
+leningsmodel
+Processen
+Probleemvalidatie
+Architecturale 
+gereedheid op 
+projectniveau
+Positionering
+Valideer vóór live 
+te gaan
+Rollen & functies
+AI-systeem-
+categorisering
+Begeleid de 
+ontwikkeling met 
+architecturale 
+sturing
+IT & data 
+architectuur
+IT & data 
+architectuur
+Beslissings-
+organen
+Beslissings-
+organen
+CAPACITEITEN 
+ONTWIKKELEN
+EVALUEREN & 
+OPSCHALEN
+VERKENNEN & 
+EXPERIMENTEREN
+KEUZES MAKEN
+IMPLEMENTEREN
+PERSOON-
+LIJKE 
+PRODUC-
+TIVITEIT
+PERSOON-
+LIJKE 
+PRODUC-
+TIVITEIT
+AI USE
+ CASES
+AI USE
+ CASES
+VERANDER
+MANAGE-
+MENT
+VERANDER
+MANAGE-
+MENT
+ORGANISA-
+TIEMODEL
+ORGANISA-
+TIEMODEL
+ VISIE & STRATEGIE 
+ VISIE & STRATEGIE 
+INNOVATIE  
+INNOVATIE  
+BETROUWBARE AI 
+BETROUWBARE AI 
+MENS & 
+ORGANISATIE 
+MENS & 
+ORGANISATIE 
+ARCHITECTUUR
+ARCHITECTUUR
+
+
+======================================================================
+PAGE 14
+======================================================================
+HET AI PLAYBOOK TOEGEPAST OP UW ORGANISATIE 
+14
+ Persoonlijk
+Formuleer een AI-strategie 
+Formuleer een AI-strategie 
+Geef inspiratiesessies 
+Geef inspiratiesessies 
+Vier succes & erken inspanningen
+Vier succes & erken inspanningen
+Volg de impact van 
+organisatorische veranderingen op
+Volg de impact van 
+organisatorische veranderingen op
+Stel een communicatie- en 
+veranderplan op
+Stel een communicatie- en 
+veranderplan op
+Voorzie opleiding & ondersteuning 
+aan medewerkers
+Voorzie opleiding & ondersteuning 
+aan medewerkers
+Begeleid medewerkers 
+Begeleid medewerkers 
+Piloteer de aanpassingen aan het 
+organisatiemodel op enkele use 
+cases
+Piloteer de aanpassingen aan het 
+organisatiemodel op enkele use 
+cases
+Neem richtlijnen aan voor het 
+gebruik van (Gen)AI
+Neem richtlijnen aan voor het 
+gebruik van (Gen)AI
+Stel business cases op en valideer 
+deze 
+Stel business cases op en valideer 
+deze 
+Creëer bewustzijn 
+Creëer bewustzijn 
+Volg de impact van 
+veranderinitiatieven op 
+Volg de impact van 
+veranderinitiatieven op 
+Verﬁ jn het organisatiemodel 
+verder en rol uit
+Verﬁ jn het organisatiemodel 
+verder en rol uit
+Deel AI-systemen op in de juiste 
+risicoclassiﬁ catie
+Deel AI-systemen op in de juiste 
+risicoclassiﬁ catie
+Ontwikkel een AI roadmap 
+Ontwikkel een AI roadmap 
+Motiveer medewerkers
+Motiveer medewerkers
+Analyseer het huidige 
+organisatiemodel
+Analyseer het huidige 
+organisatiemodel
+Bepaal het gewenst (AI-)
+organisatiemodel
+Bepaal het gewenst (AI-)
+organisatiemodel
+Neem een ethisch kader aan voor 
+AI-systemen
+Neem een ethisch kader aan voor 
+AI-systemen
+Identiﬁ ceer AI-systemen 
+Identiﬁ ceer AI-systemen 
+Bepaal de impact van de EU AI Act
+Bepaal de impact van de EU AI Act
+Bepaal de risicostrategie van uw 
+organisatie
+Bepaal de risicostrategie van uw 
+organisatie
+Implementeer een risico- en 
+controleraamwerk
+Implementeer een risico- en 
+controleraamwerk
+Volg de betrouwbaarheid en het 
+veilig gebruik van AI-systemen op
+Volg de betrouwbaarheid en het 
+veilig gebruik van AI-systemen op
+Identiﬁ ceer AI use cases
+Identiﬁ ceer AI use cases
+Onboard een testgroep
+Onboard een testgroep
+Maak een lijst van functies of 
+personas
+Maak een lijst van functies of 
+personas
+Identiﬁ ceer potentiële 
+productiviteitswinsten
+Identiﬁ ceer potentiële 
+productiviteitswinsten
+Schaal individuele 
+productiviteitswinsten 
+Schaal individuele 
+productiviteitswinsten 
+Volg het (succes van het) gebruik 
+van GenAI op
+Volg het (succes van het) gebruik 
+van GenAI op
+Prioriteer & plan AI use cases
+Prioriteer & plan AI use cases
+Ontwikkel de AI use cases 
+Ontwikkel de AI use cases 
+Volg de waarderealisatie van AI 
+use cases op
+Volg de waarderealisatie van AI 
+use cases op
+Volg de realisatie van (AI-) 
+doelstellingen op
+Volg de realisatie van (AI-) 
+doelstellingen op
+Dienstver-
+leningsmodel
+Dienstver-
+leningsmodel
+Processen
+Processen
+Positionering
+Positionering
+Rollen & 
+functies
+Rollen & 
+functies
+IT & data 
+architectuur
+IT & data 
+architectuur
+Beslissings-
+organen
+Beslissings-
+organen
+CAPACITEITEN 
+ONTWIKKELEN
+EVALUEREN & 
+OPSCHALEN
+VERKENNEN & 
+EXPERIMENTEREN
+KEUZES MAKEN
+IMPLEMENTEREN
+Begrijp AI-architectuur en maak 
+een eerste inschatting
+Begrijp AI-architectuur en maak 
+een eerste inschatting
+Leg verwachtingen en strategie 
+vast
+Leg verwachtingen en strategie 
+vast
+Bewaak de data
+Bewaak de data
+Bewaak kwaliteit en continuïteit 
+in operaties
+Bewaak kwaliteit en continuïteit 
+in operaties
+Kijk vooruit: de agentische 
+organisatie
+Kijk vooruit: de agentische 
+organisatie
+Stuur op technologie- en 
+leverancierskeuzes
+Stuur op technologie- en 
+leverancierskeuzes
+Documenteer de processen
+Documenteer de processen
+Volg de architecturale gezondheid 
+van AI-systemen op
+Volg de architecturale gezondheid 
+van AI-systemen op
+Probleemvalidatie
+Probleemvalidatie
+Architecturale 
+gereedheid op 
+projectniveau
+Architecturale 
+gereedheid op 
+projectniveau
+Valideer vóór live 
+te gaan
+Valideer vóór live 
+te gaan
+AI-systeem-
+categorisering
+AI-systeem-
+categorisering
+Begeleid de 
+ontwikkeling met 
+architecturale 
+sturing
+Begeleid de 
+ontwikkeling met 
+architecturale 
+sturing
+PERSOON-
+LIJKE 
+PRODUC-
+TIVITEIT
+PERSOON-
+LIJKE 
+PRODUC-
+TIVITEIT
+AI USE
+ CASES
+AI USE
+ CASES
+VERANDER
+MANAGE-
+MENT
+VERANDER
+MANAGE-
+MENT
+ORGANISA-
+TIEMODEL
+ORGANISA-
+TIEMODEL
+ VISIE & STRATEGIE 
+ VISIE & STRATEGIE 
+INNOVATIE  
+INNOVATIE  
+BETROUWBARE AI 
+BETROUWBARE AI 
+MENS & 
+ORGANISATIE 
+MENS & 
+ORGANISATIE 
+ARCHITECTUUR
+ARCHITECTUUR
+
+
+======================================================================
+PAGE 15
+======================================================================
+KRITIEKE SUCCESFACTOREN
+15
+KRITIEKE SUCCESFACTOREN
+(Verder) met AI aan de slag gaan niet eenvoudig. Zelfs als alle stappen uit dit playbook volledig doorlopen 
+worden, zal niet alles feilloos verlopen, en dat is normaal. Er zijn een aantal kritieke succesfactoren die de kans 
+op slagen verhogen en zorgen dat u realistisch aan de slag kan gaan. 
+1.	 Hanteer een gestructureerde aanpak
+Met AI aan de slag gaan, of dit een stap verder brengen dan experimenteren met eerste AI use cases, is 
+niet eenvoudig. We zien dan ook dat de meeste organisaties dit (zeker aan het begin) formuleren als een 
+programma, project of gestructureerd initiatief, omwille van volgende voordelen: 
+•	 Duidelijke structuur. Een project heeft een duidelijk begin en einde, met specifieke doelen en 
+eindproducten. Dit zorgt voor focus op de juiste prioriteiten. 
+•	 Heldere en formele definitie van rollen en verantwoordelijkheden. Dit zorgt voor betere samenwerking, 
+minder misverstanden en verhoogde efficiëntie. 
+•	 Duidelijk zicht op benodigde middelen (mensen, budget, tijd), dewelke  gebudgetteerd, toegewezen en 
+gestructureerd/periodiek opgevolgd kunnen worden. 
+•	 Meer gestructureerde identificatie, rapportering en beheersing van potentiële risico’s.   
+•	 Door vooraf duidelijke (kwantitatieve) doelen te stellen, kunnen de resultaten  worden gemeten en 
+geëvalueerd.  
+•	 Een projectstructuur vereenvoudigt de communicatie over de voortgang en de resultaten binnen uw 
+organisatie. 
+De tijdslijn waarop een programma, project of gestructureerd initiatief uitgevoerd kan worden hangt af van 
+verschillende factoren binnen uw organisatie, en zal dus sterk variëren. Doorgaans geven organisaties aan dat 
+dit 1 tot 3 jaar duurt, maar onthoud: elke stap is een stap vooruit.  
+2.	Voorzie voldoende tijd en middelen 
+Een belangrijke voorwaarde om van start te kunnen gaan, is dat er iemand binnen uw organisatie het 
+mandaat en de tijd heeft gekregen om het AI-initiatief uit te werken voor de organisatie (we verwijzen verder 
+in dit playbook naar deze persoon als de ‘trekker’).  
+Er is geen eenduidige omschrijving van wat het ‘beste’ profiel is voor deze trekker, dit hangt sterk af van 
+uw organisatie. Zo kijkt u best naar wie er beschikbaar kan gemaakt worden enerzijds, en de interesse 
+in AI anderzijds. Sommige organisaties kiezen ervoor om iemand van IT of data (met veel technische 
+(AI) bagage) dit mandaat te geven, anderen opteren voor de persoon die innovatie ook trekt (gezien er 
+gelijkaardige uitdagingen zijn), of eerder voor een programma/projectmanager profiel (om bv. expertise rond 
+gestructureerde opvolging en stakeholder management optimaal mee te nemen), een verandermanager of 
+iemand uit de business. 
+
+
+[Page 15 has 1 image(s)]
+  - image 0: xref=3196 w=797 h=128
+
+======================================================================
+PAGE 16
+======================================================================
+KRITIEKE SUCCESFACTOREN
+16
+Wat betreft de tijdsbesteding voor deze rol van ‘AI-trekker’, hangt dit natuurlijk van uw organisatie af, maar 
+zien we dat dit doorgaans over een tijdsbesteding van 0,5 VTE tot 1 VTE gaat.  
+De trekker van het AI-initiatief kan dit niet alleen. Voor de verschillende activiteiten is nauwe samenwerking 
+nodig met collega’s uit diverse domeinen binnen de organisatie. Het is belangrijk dat deze collega’s niet 
+alleen betrokken worden om input te leveren, zoals het delen van uitdagingen, kansen en noden binnen hun 
+team of afdeling, maar ook om actief mee te denken over oplossingen. Door hen vanaf het begin te betrekken, 
+worden oplossingen beter afgestemd op de realiteit van de organisatie en groeit het draagvlak. Dit verkleint 
+niet alleen het risico op weerstand, maar bevordert ook een meer inclusieve en effectieve implementatie van 
+AI. 
+Onderstaande tabel geeft een overzicht van welke stakeholders betrokken moeten worden bij welke pijler:
+Management team
+Data, IT, AI (project)managers
+Data en/of AI teams
+Innovatie verantwoordelijke 
+Beleidsadviserurs en 
+-medewerkers
+(Business) domein experten
+Risicobeheer / interne  
+controle
+Juridische afdeling
+CISO en/of team 
+informatieveiligheid 
+Data protection officer 
+Interne communicatie
+Verander management
+Opleidings- 
+verantwoordelijke / HRBP
+Integriteitscoördinator
+Verwachte 
+tijds- 
+besteding
+1 u./ 
+maand
+0.5 
+dag/
+week
+5 
+dagen/
+week
+1 dag/
+maand
+1.5 
+dag/
+maand
+1 u./
+week
+1 u./
+week
+1 u./
+maand
+0.5 
+dag/
+maand
+0.5 
+dag/
+maand
+1 dag/
+maand
+1 dag/
+week
+1 dag/
+maand
+1 u./
+maand
+Pijler 1: Visie  
+en strategie
+x
+x
+x
+x
+x
+Pijler 2:  
+Innovatie
+x
+x
+x
+x
+x
+x
+x
+Pijler 3: 
+Betrouwbare 
+AI 
+x
+x
+x
+x
+x
+x
+x
+x
+Pijler 4: Mens 
+& organisatie
+x
+x
+x
+x
+x
+x
+Organisaties met beperkte tijd en middelen kunnen hun inspanningen efficiënter inzetten door kennis te delen, 
+gezamenlijke initiatieven op te zetten of samen te werken via een overkoepelend orgaan.   
+
+
+======================================================================
+PAGE 17
+======================================================================
+KRITIEKE SUCCESFACTOREN
+17
+3.	Zorg voor leiderschapsondersteuning en een ondersteunende cultuur 
+Het AI-initiatief heeft leiderschapsondersteuning nodig om succesvol te zijn. Het managementteam speelt 
+een cruciale rol in het creëren van een cultuur waarin experimenteren, leren, en veranderen wordt 
+aangemoedigd. Draagvlak vanuit het leiderschap helpt ook om middelen vrij te maken en medewerkers mee te 
+krijgen in de verandering. 
+4.	Zorg voor een sterke samenwerking tussen business, IT en data/AI 
+Succesvolle AI-implementatie vraagt om een nauwe samenwerking tussen o.a. business-, IT- en data-/AI-
+teams. De business identificeert uitdagingen en opportuniteiten, data-/AI-teams ontwikkelen AI-oplossingen 
+die hierop inspelen, en IT-teams zorgen voor een veilige en efficiënte integratie in bestaande systemen en 
+architectuur. Door deze teams van meet af aan samen te brengen, worden AI-oplossingen niet alleen 
+strategisch relevant, maar ook technisch haalbaar en praktisch inzetbaar. 
+5.	Vermijd onnodige complexiteit 
+Een meer AI-gedreven organisatie uitbouwen hoeft niet onnodig complex te zijn. Idealiter wordt 
+voortgebouwd op wat al werkt binnen de organisatie, in plaats van volledig nieuwe structuren naast 
+bestaande structuren uit te tekenen. Dit betekent bijvoorbeeld dat o.a. besluitvormingsprocessen, rollen, 
+data-architectuur, verandermanagementstrategieën of governancekaders niet ‘dubbel’ worden opgezet, maar 
+dat de bestaande processen, rollen, en architectuur worden uitgebreid om ook van toepassing te zijn op AI.  
+Daarnaast is het waardevol om externe kennisbronnen te benutten: samenwerking met andere organisaties, 
+deelname aan netwerken zoals het AI-netwerk van het AI Expertisecentrum en het delen van best practices 
+kunnen helpen om AI op een duurzame en geïntegreerde manier in te zetten. 
+6.	Schakel (externe) begeleiding in waar nodig 
+Dit playbook biedt concrete handvaten, templates en scripts, die voor zoveel mogelijk organisaties een 
+startpunt moeten kunnen zijn. Hou er echter rekening mee dat u voor sommige stappen mogelijk (externe) 
+hulp moet/kan inschakelen om u te begeleiden in de uitwerking. 
+7.	Beheer verwachtingen 
+Veranderinitiatieven kunnen onzekerheid en weerstand oproepen binnen een organisatie, wat het belang 
+onderstreept van het zorgvuldig beheren van verwachtingen vanaf de start. Transparante communicatie 
+speelt hierin een sleutelrol: het is essentieel om duidelijk te maken wat AI wel en niet kan bereiken, zowel op 
+korte als lange termijn. AI is geen magische oplossing voor alle problemen, maar een hulpmiddel dat effectief 
+moet worden ingezet om resultaten te behalen. 
+Hoe verwachtingen managen in praktijk?  
+•	 Eerlijke communicatie: Tijdens workshops, trainingen en inspiratiesessies is het belangrijk om een 
+gebalanceerd beeld te schetsen van de voordelen en beperkingen van AI. Gebruik voorbeelden van zowel 
+succesverhalen als uitdagingen.  
+•	 Pilootprojecten inzetten: Start met kleine, concrete initiatieven die snel tastbare waarde opleveren. 
+Gebruik deze piloten om draagvlak te creëren en verwachtingen bij te stellen.  
+•	 Resultaten monitoren en delen: Zorg voor regelmatige rapportages over de voortgang van AI-projecten. 
+Dit helpt om transparant te zijn over wat werkt en wat verbeterd moet worden.
+
+
+======================================================================
+PAGE 18
+======================================================================
+18
+AI IN ACTIE: HET COLUMBUS PROJECT
+AI IN ACTIE: INSPIREREND 
+PRAKTIJKVOORBEELD 
+KEY TAKE-AWAYS
+Binnen ons initiatief rond generatieve AI willen we een cultuur van creativiteit en innovatie bevorderen.  Met 
+een gefaseerde aanpak (van leren en experimenteren met een beperkt aantal use cases) willen we samen 
+bouwen aan een toekomst waarin generatieve AI ons helpt om slimmer, efficiënter en effectiever te werken.
+Intern/
+extern
+Profiel
+Mandagen
+Intern
+Projectleider
+60
+Intern
+Communicatieprofiel
+40
+Extern
+Verandermanager
+50
+Extern
+AI-vertaler
+115
+Extern
+AI engineer/dev.
+60
+Totaal (2024)
+325
+•	 Zet in op een goede communicatiecampagne. Hier wordt 
+vaak op ingeboet, maar dit verhoogt de visibiliteit van het 
+initiatief en de motivatie van werknemers om betrokken te 
+zijn.
+•	 Vraag om management betrokkenheid. Neem bijvoorbeeld 
+het directiecomité als stuurgroep van het initiatief, en maak 
+de verantwoordelijkheden van afdelingshoofden/directeurs 
+ook expliciet door concrete verwachtingen en taken voor hen 
+te formuleren.
+•	 Leer en stuur al doende bij. Denk vanuit mogelijkheden en 
+niet vanuit beperkingen. Experimenteren bevordert het leer- 
+en sensibiliseringsproces.
+•	 Zet in op open en transparante communicatie. Dit vergroot 
+empathie en draagvlak bij medewerkers. Benadruk dat 
+iedereen nog in een leerproces zit, dat AI een nieuw en 
+evoluerend thema is, en dat vooruitgang gepaard gaat met 
+proberen, leren en bijsturen.
+In de volgende fase van het Columbus project zullen de uitgevoerde experimenten ons helpen om onze  
+visie en strategie aan te scherpen en bredere use-cases te identificeren en prioriteren. We zullen belangrijke 
+beslissingen moeten nemen over de integratie met bestaande architectuur, budget en staffing, met de  
+nadruk op het duurzaam verankeren van genAI in ons huidige team binnen de organisatie.
+In plaats van haastig van innovatie naar duurzaamheid te gaan, hebben we gekozen voor een doordachte, 
+stapsgewijze aanpak om veelvoorkomende valkuilen in generatieve AI-initiatieven te vermijden. Zo kunnen 
+we zorgvuldig de impact van AI op de organisatiestructuur, processen en cultuur beoordelen en strategische 
+beslissingen nemen.
+BETROKKENEN & INZET
+NEXT STEPS
+INTRODUCTIE EN CONTEXT
+Columbus is een initiatief binnen Departement Werk, Economie, Wetenschap, 
+Innovatie en Sociale Economie (WEWIS), waarin we samen op ontdekkingsreis 
+gaan om de mogelijkheden van generatieve AI te verkennen in onze organisatie 
+en dagelijkse werking. In 2024 lag de nadruk enerzijds op leren, inspireren en 
+sensibiliseren. We wilden duidelijk maken wat generatieve AI inhoudt, hoe 
+het ons kan ondersteunen, welke risico’s er zijn en hoe we met specifieke 
+instrumenten aan de slag kunnen gaan. Anderzijds hebben we binnen een 
+vastgesteld kader experimenten uitgevoerd met generatieve AI. 
+
+
+[Page 18 has 2 image(s)]
+  - image 0: xref=3114 w=797 h=167
+  - image 1: xref=3115 w=106 h=107
+
+======================================================================
+PAGE 19
+======================================================================
+19
+AI IN ACTIE: HET COLUMBUS PROJECT (VERVOLG)
+ACTIVITEITEN
+LESSONS LEARNED
+1.	 Leer- en inspiratiesessies georganiseerd, fysiek in 
+kleine groepen, waarin medewerkers (inclusief het 
+directiecomité) kennismaakten met GenAI.
+2.	Nulmeting uitgevoerd om de huidige kennis en het 
+gebruik van tools (bijvoorbeeld ChatGPT vs. Copilot), 
+zowel als behoeften in kaart te brengen.
+3.	Communicatiecampagne opgezet met sterke visuals, 
+branding, en marketing om nieuwsgierigheid en 
+draagvlak te creëren via verschillende kanalen (intranet, 
+fysieke postkaarten, nieuwsbrief,…).
+•	 Alle medewerkers waren welkom op de inspiratie- en 
+aan-de-slag-sessies, om iedereen een basis te geven. 
+Daarna kregen ze de keuze of ze zich wilden aansluiten 
+bij de AI community.
+•	 Een nulmeting biedt waardevolle inzichten in de kennis, 
+het gebruik en de overtuigingen van medewerkers, 
+waardoor activiteiten beter afgestemd kunnen worden 
+op hun behoeften en startniveau.
+•	 Een goede branding vergroot herkenning en 
+enthousiasme. Zo hebben we 75% van de organisatie 
+bereikt.
+1.	 Projectdoelstellingen geformuleerd en bijhorende 
+governance opgesteld. Er werd een 3-sporenaanpak 
+gevolgd:
+	» Leren en inspireren: focus op bewustwording, training 
+en inspiratiesessies.
+	» Experimenteren: focus op AI use cases.
+	» Strategie & governance: focus op leren en schalen.
+•	 De IT-directeur en leidend ambtenaar werden aangesteld 
+als sponsors, om ervoor te zorgen dat het project niet 
+alleen een IT-verhaal zou zijn en voldoende draagvlak 
+kreeg.
+•	 Zet concrete doelen voor korte en lange termijn.
+1.	 Training georganiseerd voor medewerkers rond het 
+gebruik van Copilot en prompt-engineering in specifieke 
+use cases.
+2.	Prompt bibliotheek opgezet om prompts te bewaren 
+en delen met medewerkers.
+3.	Bijblijfsessies georganiseerd per kwartaal voor alle 
+medewerkers om op de hoogte te blijven van nieuwe 
+updates en richtlijnen m.b.t. AI.
+•	 Uit de trainingen en inspiratiesessies bleek dat er meer 
+aandacht besteed moet worden aan algemene digitale 
+vaardigheden en efficiëntie.
+•	 Er is een grote nadruk gelegd op de betrokkenheid 
+en verantwoordelijkheid van het management in het 
+project: ze werden uitgenodigd om deel te nemen aan 
+de sessies en ze werden door regelmatige stuurgroepen 
+op de hoogte gehouden van de resultaten.
+1.	 Verschillende experimenten werden uitgevoerd, op 
+basis van ideeën uit verschillende hoeken: discovery 
+sessies, stuurgroep, en medewerkers die een idee 
+insturen in de ideeënbus.
+2.	Een interne AI-community, met bijhorende Sharepoint 
+omgeving voor kennisdeling rond GenAI.
+•	 Doe aan verwachtingen management bij experimenten 
+en proof of concepts (PoC). Benadruk daarbij het 
+onderscheid tussen experimenten in een gecontroleerde 
+omgeving en het in productie zetten van deze 
+experimenten conform regelgeving. 
+•	 Stel een moderator of coördinator aan die de 
+community activeert en levend houdt.
+1.	 Methodiek om ideeën te beoordelen en prioriteren 
+(innovatie funnel) werd uitgewerkt en gedocumenteerd, 
+na groot succes van de ideeënbus.
+2.	Draaiboek uitgewerkt om de werking en verwachtingen 
+rond experimenten helder te krijgen.
+3.	Inzichten uit use cases en projectgovernance 
+geëvalueerd om de strategie op lange termijn verder 
+vorm te geven.
+•	 Prioriteer ideeën, want je kan niet op alles tegelijk 
+focussen. 
+•	 Schaal al doende op, wanneer de nood er is. Vraag 
+regelmatig feedback van de business, eindgebruikers en 
+ondersteunende teams binnen de organisatie.
+•	 Communiceer transparant over het leer- en schaalproces. 
+Verandering vraagt tijd.
+1. VERKENNEN & INSPIREREN
+2. STRATEGIE BEPALEN
+3. CAPACITEITEN ONTWIKKELEN
+4. IMPLEMENTEREN
+5. OPSCHALEN
+
+
+======================================================================
+PAGE 20
+======================================================================
+VOLGENDE STAPPEN
+20
+VOLGENDE STAPPEN 
+In dit document heeft u een overzicht gekregen van de belangrijkste pijlers van het AI Playbook, hoe u het AI 
+Playbook kunt toepassen op uw organisatie, en hoe u AI op een gestructureerde manier kunt benaderen.  
+Voor een meer verregaande begeleiding bij de adoptie en implementatie van AI binnen uw organisatie, kunt 
+u verder navigeren naar Het AI Playbook. Dit uitgebreide document bevat gedetailleerde beschrijvingen van 
+alle activiteiten per pijler, inclusief concrete stappenplannen, best practices, raamwerken en inspirerende 
+praktijkvoorbeelden om u stap voor stap te ondersteunen in uw AI-reis. 
+Bij verdere vragen kan u terecht bij het  
+AI Expertisecentrum van Digitaal Vlaanderen
+
+
+[Page 20 has 1 image(s)]
+  - image 0: xref=3196 w=797 h=128

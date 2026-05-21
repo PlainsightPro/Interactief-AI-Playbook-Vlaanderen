@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>AI Playbook · Interactieve gids voor uw organisatie</title>
+  <meta name="description" content="Een interactieve, gepersonaliseerde versie van het AI Playbook van Digitaal Vlaanderen. Bepaal uw organisatieprofiel en krijg uw eigen stappenplan." />
+  <meta name="theme-color" content="#FFE615" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23FFE615' rx='8'/%3E%3Cpath d='M14 56V22q0-8 8-11l8-3q2-1 4 0l8 3q8 3 8 11v6l4-4-2 7 4 2-6 3-2 5 4 4h-6l-4 5 4 3-6 1-4 4-4-1-4 1-4-5-6 0 4-8h-6l4-4-2-5-6-3 4-2-2-7 4 4z' fill='%23000'/%3E%3C/svg%3E" />
+
+  <script src="config.js"></script>
+</head>
+<body data-page="index">
+  <a class="skip-link" href="#content">Sla over naar inhoud</a>
+  <header id="topbar" class="topbar" role="banner"></header>
+
+  <main id="content">
+    <!-- ============ Hero ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero-particles" id="heroParticles" aria-hidden="true"></canvas>
+      <div class="hero-lion" aria-hidden="true" data-icon="lion"></div>
+
+      <div class="container hero-content">
+        <span class="hero-kicker">Interactieve gids · Versie mei 2026</span>
+        <h1 id="hero-title">Uw AI&#8209;reis<br/>begint hier.</h1>
+        <p class="hero-sub">
+          Een gepersonaliseerde, interactieve doorloop van het <em>AI Playbook</em> van
+          Digitaal Vlaanderen. Bepaal in 6 vragen uw organisatieprofiel en krijg de
+          activiteiten te zien die op uw situatie zijn afgestemd — niets meer, niets minder.
+        </p>
+        <div class="hero-cta-row">
+          <a class="btn btn-secondary btn-lg" href="quiz.html">
+            <span>Bepaal uw organisatieprofiel</span>
+            <span class="icon" data-icon="arrowRight"></span>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#hoe-werkt-het">Hoe werkt het?</a>
+          <div class="hero-meta">
+            <span>6 vragen</span>
+            <span class="hero-meta-divider"></span>
+            <span>~2 minuten</span>
+            <span class="hero-meta-divider"></span>
+            <span>4 profielen</span>
+          </div>
+        </div>
+
+        <div class="hero-pdf-row" aria-label="Originele PDF-documenten">
+          <span class="hero-pdf-label">Originele bron-PDFs:</span>
+          <a class="hero-pdf-link" href="pdf/AI_Playbook_Introductie.pdf" target="_blank" rel="noopener noreferrer" download>
+            <span class="icon" data-icon="pdf"></span>
+            <span>Introductie tot het AI Playbook</span>
+            <span class="hero-pdf-meta">PDF · 20 p.</span>
+          </a>
+          <a class="hero-pdf-link" href="pdf/AI_Playbook_Kernactiviteiten.pdf" target="_blank" rel="noopener noreferrer" download>
+            <span class="icon" data-icon="pdf"></span>
+            <span>AI Playbook — Kernactiviteiten</span>
+            <span class="hero-pdf-meta">PDF · 116 p.</span>
+          </a>
+        </div>
+
+        <!-- Layer-1 disclaimer card -->
+        <aside class="disclaimer-card" aria-labelledby="discl-title">
+          <div class="disclaimer-card-title" id="discl-title">
+            <span data-icon="info" class="icon" style="width:18px;height:18px"></span>
+            <span>Over deze interactieve gids</span>
+          </div>
+          <p style="margin:0">
+            Onafhankelijke samenvatting op basis van de officiële documenten
+            <em>Introductie tot het AI Playbook</em> en <em>AI Playbook — Kernactiviteiten</em>
+            (Digitaal Vlaanderen, mei 2026). Samenvattingen en de AI-assistent worden ondersteund door
+            <strong>Google Gemini Flash-Lite</strong> via OpenRouter — verifieer essentiële informatie
+            steeds aan de bron. <a href="over.html">Lees de volledige disclaimer →</a>
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ How it works ============ -->
+    <section class="section section-soft" id="hoe-werkt-het">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-eyebrow">Hoe werkt het?</div>
+          <h2>Drie stappen naar uw eigen stappenplan</h2>
+          <p class="text-soft" style="max-width:640px">
+            De originele PDF telt 116 pagina's. Deze gids toont enkel wat voor
+            uw organisatieprofiel relevant is — in helder hapklare brokken,
+            met een AI-assistent voor uw vragen.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card reveal">
+            <span class="card-icon" data-icon="compass"></span>
+            <span class="card-meta">Stap 1</span>
+            <h3>Bepaal uw organisatieprofiel</h3>
+            <p class="text-soft">Zes korte vragen verbatim uit de officiële <em>Introductie tot het AI Playbook</em> (p.&nbsp;8). Geen maturiteitsassessment — een leidraad.</p>
+            <a class="btn-link" href="quiz.html">Start de quiz →</a>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" data-icon="grid"></span>
+            <span class="card-meta">Stap 2</span>
+            <h3>Bekijk uw matrix</h3>
+            <p class="text-soft">Activiteiten per pijler &amp; fase voor uw profiel. Inklapbaar, doorzoekbaar, en met een directe link naar de bron-PDF.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" data-icon="chat"></span>
+            <span class="card-meta">Stap 3</span>
+            <h3>Stel uw vraag</h3>
+            <p class="text-soft">Een AI-assistent helpt u dieper graven binnen uw eigen scope. Gestart met voorbeeldvragen, daarna vrije dialoog.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5 pijlers ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-eyebrow">De vijf pijlers</div>
+          <h2>De vijf bouwstenen van het AI Playbook</h2>
+          <p class="text-soft" style="max-width:640px">
+            Elk profiel doorloopt dezelfde vijf pijlers, maar met andere
+            diepgang en in een ander tempo.
+          </p>
+        </div>
+        <div class="pillars-strip" id="pillarsStrip"></div>
+      </div>
+    </section>
+
+    <!-- ============ 5 fasen timeline ============ -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-eyebrow">Vijf fasen</div>
+          <h2>Uw AI-reis in vijf fasen</h2>
+          <p class="text-soft" style="max-width:640px">
+            Deze fasen vormen de horizontale as van uw stappenplan. Sommige
+            organisaties doorlopen ze stap-voor-stap, andere iteratief.
+          </p>
+        </div>
+        <div class="phases-timeline" id="phasesTimeline"></div>
+      </div>
+    </section>
+
+    <!-- ============ Profielen ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-eyebrow">Vier profielen</div>
+          <h2>Voor welk profiel wordt deze gids gemaakt?</h2>
+          <p class="text-soft" style="max-width:640px">
+            Drie profielen volgen uit de quiz. Het vierde — <em>Persoonlijk</em>
+            — kiest u zelf om uw eigen stappenplan samen te stellen.
+          </p>
+        </div>
+        <div class="cards-grid" id="profilesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ Final CTA ============ -->
+    <section class="section section-dark">
+      <div class="container" style="text-align:center">
+        <div class="reveal">
+          <h2 style="font-size:clamp(2rem, 4vw, 3rem)">Klaar om uw eigen playbook te zien?</h2>
+          <p class="text-muted" style="max-width:540px;margin:0 auto var(--sp-8)">
+            6 vragen, ongeveer 2 minuten, geen registratie nodig om uw profiel te bepalen.
+          </p>
+          <a class="btn btn-primary btn-lg" href="quiz.html">
+            <span>Bepaal uw organisatieprofiel</span>
+            <span class="icon" data-icon="arrowRight"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="site-footer" role="contentinfo"></footer>
+
+  <!-- Vendored libs (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+
+  <script type="module">
+    import "./src/main.js";
+    import { startHeroParticles } from "./src/particles.js";
+    import { Data } from "./src/data.js";
+    import { el, initReveal } from "./src/utils.js";
+    import { Icons, PROFILE_ICONS, PILLAR_ICONS } from "./src/icons.js";
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      // Particles after Three loads.
+      const tryStart = () => {
+        if (typeof THREE !== "undefined") startHeroParticles(document.getElementById("heroParticles"));
+        else setTimeout(tryStart, 80);
+      };
+      tryStart();
+
+      // Render pillars strip + phases timeline + profile grid from introductie.json
+      try {
+        const intro = await Data.introductie();
+        renderPillars(intro.pijlers);
+        renderPhases(intro.phases);
+        renderProfiles(intro.profiles);
+        // Pick up the freshly-appended `.reveal` tiles — initReveal() in main.js
+        // already ran on DOMContentLoaded, before these awaited renders.
+        initReveal(".reveal");
+      } catch (err) {
+        console.warn("Couldn't load introductie.json:", err);
+      }
+    });
+
+    function renderPillars(pijlers) {
+      const root = document.getElementById("pillarsStrip");
+      if (!root) return;
+      for (const p of pijlers) {
+        const tile = document.createElement("a");
+        tile.className = "pillar-tile pillar-tile-link reveal";
+        tile.href = `playbook.html?view=pillar#pijler-${p.id}`;
+        tile.setAttribute("aria-label", `Pijler ${p.id}: ${p.name} — open in playbook`);
+        tile.innerHTML = `
+          <span class="pillar-tile-num">${p.id}</span>
+          <h4>${p.name}</h4>
+          <p>${p.description.split(". ")[0]}.</p>
+        `;
+        root.appendChild(tile);
+      }
+    }
+
+    function renderPhases(phases) {
+      const root = document.getElementById("phasesTimeline");
+      if (!root) return;
+      for (const ph of phases) {
+        const step = document.createElement("a");
+        step.className = "phase-step phase-step-link reveal";
+        step.href = `playbook.html?view=phase#fase-${ph.id}`;
+        step.setAttribute("aria-label", `Fase ${ph.id}: ${ph.name} — open in playbook`);
+        step.innerHTML = `
+          <span class="phase-step-num">${ph.id}</span>
+          <div class="phase-step-title">${ph.name}</div>
+        `;
+        root.appendChild(step);
+      }
+    }
+
+    function renderProfiles(profiles) {
+      const root = document.getElementById("profilesGrid");
+      if (!root) return;
+      const order = ["verkenner","piloot","expert","persoonlijk"];
+      for (const slug of order) {
+        const meta = profiles[slug];
+        if (!meta) continue;
+        const iconName = PROFILE_ICONS[slug] || "user";
+        const card = document.createElement("a");
+        card.className = "card card-link reveal";
+        card.href = `playbook.html?profile=${slug}`;
+        card.setAttribute("aria-label", `Open playbook voor profiel: ${meta.name}`);
+        card.innerHTML = `
+          <span class="card-icon">${Icons[iconName] || Icons.user}</span>
+          <h3>${meta.name}</h3>
+          <p class="text-soft">${meta.tagline || ""}</p>
+          <p class="text-soft" style="font-size:var(--fs-sm)">${meta.description}</p>
+        `;
+        root.appendChild(card);
+      }
+    }
+  </script>
+</body>
+</html>
