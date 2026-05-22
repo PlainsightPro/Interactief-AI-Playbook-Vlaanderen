@@ -19,13 +19,17 @@ function buildTopbar() {
   if (!topbar) return;
 
   topbar.innerHTML = `
-    <a class="topbar-brand" href="index.html" aria-label="AI Playbook — startpagina">
-      <span class="lion-svg" aria-hidden="true" data-icon="lionFlat"></span>
-      <span class="brand-stack">
-        <span class="brand-name">AI Playbook</span>
-        <span class="brand-sub">Interactieve gids · Vlaanderen</span>
-      </span>
-    </a>
+    <div class="topbar-brand">
+      <a class="topbar-logo" href="https://www.plainsight.pro" target="_blank" rel="noopener noreferrer" aria-label="Plainsight — open plainsight.pro in een nieuw venster">
+        <img src="img/plainsight.png" alt="Plainsight" />
+      </a>
+      <a class="topbar-brand-text" href="index.html" aria-label="AI Playbook — startpagina">
+        <span class="brand-stack">
+          <span class="brand-name">AI Playbook</span>
+          <span class="brand-sub">Interactieve gids · Vlaanderen</span>
+        </span>
+      </a>
+    </div>
     <nav class="topbar-nav" aria-label="Hoofdmenu">
       <a class="topbar-link" href="index.html" data-page="index">Start</a>
       <a class="topbar-link is-mobile" href="quiz.html" data-page="quiz">Quiz</a>
@@ -120,6 +124,10 @@ function buildFooter() {
       <div class="footer-bottom">
         <span>© ${year} · Interactieve AI Playbook · Versie mei 2026</span>
         <span>Gebouwd op de bronnen van Digitaal Vlaanderen</span>
+        <a class="footer-credit" href="https://www.plainsight.pro" target="_blank" rel="noopener noreferrer" aria-label="Gemaakt door Plainsight — open plainsight.pro in een nieuw venster">
+          <span>Gemaakt door</span>
+          <img src="img/plainsight.png" alt="Plainsight" />
+        </a>
       </div>
     </div>
   `;
