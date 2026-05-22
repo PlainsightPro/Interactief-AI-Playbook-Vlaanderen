@@ -9,7 +9,7 @@ from pathlib import Path
 from PIL import Image
 import statistics
 
-IMG_DIR = Path(r"C:\Users\DavidLoos\Desktop\AI Playbook\web\img")
+IMG_DIR = Path(r"C:\Users\DavidLoos\Desktop\AI Playbook\img")
 
 def analyze(path: Path):
     try:

@@ -5,12 +5,23 @@ import { Icons } from "./icons.js";
 import { Email, Profile, ChatHistory } from "./state.js";
 import { Data } from "./data.js";
 import { validateBusinessEmail } from "./email.js";
+import { renderMarkdown } from "./markdown.js";
 
 const CFG = window.AI_PLAYBOOK_CONFIG || {};
 
 function isProxyConfigured() {
   return CFG.SUPABASE_URL && !/YOUR_PROJECT/i.test(CFG.SUPABASE_URL)
     && CFG.SUPABASE_ANON_KEY && !/YOUR_ANON_KEY/i.test(CFG.SUPABASE_ANON_KEY);
+}
+
+// Surface the runtime config once so missing/cached values are easy to spot.
+if (!isProxyConfigured()) {
+  console.warn("[chat] AI-proxy not configured at load:", {
+    has_url: !!CFG.SUPABASE_URL,
+    url: CFG.SUPABASE_URL,
+    has_key: !!CFG.SUPABASE_ANON_KEY,
+    key_prefix: typeof CFG.SUPABASE_ANON_KEY === "string" ? CFG.SUPABASE_ANON_KEY.slice(0, 12) : null,
+  });
 }
 
 let prepared = { global: [], byPillar: {}, byProfile: {} };
@@ -227,16 +238,31 @@ function showEmailGate(afterVerified) {
 
 function appendMessage(role, content, citations) {
   const msg = el("div", { class: `chat-message is-${role}` });
-  msg.textContent = content;
+  setMessageContent(msg, role, content);
   if (Array.isArray(citations) && citations.length) {
+    const citeRow = el("div", { class: "chat-citations" });
     for (const c of citations) {
       const link = el("a", { class: "citation", href: `#activity-${c.id}` }, c.number || c.id);
-      msg.appendChild(link);
+      citeRow.appendChild(link);
     }
+    msg.appendChild(citeRow);
   }
   bodyEl.appendChild(msg);
   bodyEl.scrollTop = bodyEl.scrollHeight;
   return msg;
+}
+
+// Assistant replies get rendered as Markdown; everything else stays as plain
+// text so a user typing literal asterisks doesn't turn into bold.
+function setMessageContent(msgEl, role, content) {
+  const isAssistantReply = role === "assistant" || role === "assistant is-typing";
+  if (isAssistantReply && content && !/^(Bezig met antwoord)/i.test(content)) {
+    msgEl.classList.add("md-body");
+    msgEl.innerHTML = renderMarkdown(content);
+  } else {
+    msgEl.classList.remove("md-body");
+    msgEl.textContent = content;
+  }
 }
 
 async function sendUserMessage(text) {
@@ -253,10 +279,19 @@ async function sendUserMessage(text) {
   const typing = appendMessage("assistant is-typing", "Bezig met antwoord…");
 
   try {
-    const reply = await callChat(text);
-    typing.remove();
-    appendMessage("assistant", reply);
-    ChatHistory.appendFor(contextId, { role: "assistant", content: reply });
+    let acc = "";
+    const reply = await callChat(text, (chunk) => {
+      acc = chunk;
+      typing.classList.remove("is-typing");
+      typing.className = "chat-message is-assistant";
+      setMessageContent(typing, "assistant", acc);
+      bodyEl.scrollTop = bodyEl.scrollHeight;
+    });
+    const final = reply || acc;
+    typing.classList.remove("is-typing");
+    typing.className = "chat-message is-assistant";
+    setMessageContent(typing, "assistant", final || "Geen antwoord ontvangen.");
+    ChatHistory.appendFor(contextId, { role: "assistant", content: final });
   } catch (err) {
     typing.remove();
     const friendly = !isProxyConfigured()
@@ -266,7 +301,7 @@ async function sendUserMessage(text) {
   }
 }
 
-async function callChat(userText) {
+async function callChat(userText, onChunk) {
   if (!isProxyConfigured()) {
     throw new Error("proxy_not_configured");
   }
@@ -301,10 +336,10 @@ async function callChat(userText) {
     const text = await res.text().catch(() => "");
     throw new Error(`HTTP ${res.status}: ${text.slice(0, 200)}`);
   }
-  return readSseStream(res);
+  return readSseStream(res, onChunk);
 }
 
-async function readSseStream(res) {
+async function readSseStream(res, onChunk) {
   const reader = res.body.getReader();
   const decoder = new TextDecoder();
   let buffer = "";
@@ -315,16 +350,21 @@ async function readSseStream(res) {
     buffer += decoder.decode(value, { stream: true });
     const lines = buffer.split("\n");
     buffer = lines.pop() || "";
+    let updated = false;
     for (const line of lines) {
       if (!line.startsWith("data:")) continue;
       const data = line.slice(5).trim();
-      if (data === "[DONE]") return full;
+      if (data === "[DONE]") {
+        if (updated && typeof onChunk === "function") onChunk(full);
+        return full;
+      }
       try {
         const j = JSON.parse(data);
         const piece = j.choices?.[0]?.delta?.content || j.choices?.[0]?.message?.content || "";
-        if (piece) full += piece;
+        if (piece) { full += piece; updated = true; }
       } catch {}
     }
+    if (updated && typeof onChunk === "function") onChunk(full);
   }
   return full || "Geen antwoord ontvangen.";
 }

@@ -54,7 +54,15 @@ function profileBlurb(profile?: string): string {
 function buildSystemPrompt(req: ChatRequest): string {
   const base = [
     "Je bent een behulpzame assistent voor de interactieve gids op basis van het AI Playbook van Digitaal Vlaanderen.",
-    "Antwoord altijd in het Nederlands, beknopt en helder. Gebruik korte alinea's of bullet points.",
+    "Antwoord altijd in het Nederlands, beknopt en helder.",
+    "Je antwoorden worden gerenderd als Markdown. Gebruik dat actief om leesbaarheid te verhogen:",
+    "- **vet** voor nadruk en kernbegrippen;",
+    "- *cursief* voor nuance of bronvermelding;",
+    "- lijsten met streepjes (`- item`) of nummers (`1. item`) wanneer je opsomt;",
+    "- `inline code` voor termen, parameters of bestandsnamen;",
+    "- `### Subkop` voor structuur in langere antwoorden (geen `#` of `##` — die zijn te groot in het chatpaneel);",
+    "- blanco regels tussen alinea's. Geen HTML, geen tabellen.",
+    "Houd alinea's kort (1–3 zinnen). Begin niet met een titel als één korte alinea volstaat.",
     "Houd je strikt aan de aangereikte context wanneer die er is. Verzin geen feiten, hallucineer geen activiteiten.",
     "Als de gebruiker iets vraagt dat buiten de context valt: zeg dat eerlijk en verwijs naar de bron-PDF.",
     "Vermeld waar mogelijk de sectienummers (bv. '§ 1.1.1') zodat de gebruiker de bron kan vinden.",
@@ -106,70 +114,82 @@ async function logLead(email: string, profile?: string): Promise<void> {
 }
 
 Deno.serve(async (req: Request) => {
-  if (req.method === "OPTIONS") {
-    return new Response("ok", { headers: corsHeaders });
-  }
-  if (req.method !== "POST") {
-    return jsonError(405, "Only POST is allowed");
-  }
-
-  let body: ChatRequest;
   try {
-    body = await req.json();
-  } catch (_) {
-    return jsonError(400, "Invalid JSON body");
+    if (req.method === "OPTIONS") {
+      return new Response("ok", { headers: corsHeaders });
+    }
+    if (req.method !== "POST") {
+      return jsonError(405, "Only POST is allowed");
+    }
+
+    let body: ChatRequest;
+    try {
+      body = await req.json();
+    } catch (_) {
+      return jsonError(400, "Invalid JSON body");
+    }
+
+    // Lead-only ping (used by the email gate to register the user without sending a message).
+    if (body.kind === "lead") {
+      if (!body.email) return jsonError(400, "email required for lead kind");
+      await logLead(body.email, body.profile);
+      return jsonOk({ ok: true });
+    }
+
+    const apiKey = Deno.env.get("OPENROUTER_API_KEY");
+    if (!apiKey) return jsonError(500, "OPENROUTER_API_KEY is not configured on the server");
+
+    if (!body.messages || !Array.isArray(body.messages) || body.messages.length === 0) {
+      return jsonError(400, "messages[] is required");
+    }
+
+    // Best-effort lead log on every chat (idempotent — upsert on email).
+    if (body.email) logLead(body.email, body.profile).catch(() => {});
+
+    const systemPrompt = buildSystemPrompt(body);
+    const messages = [
+      { role: "system" as const, content: systemPrompt },
+      ...body.messages.filter((m) => m.role !== "system"),
+    ];
+
+    let upstream: Response;
+    try {
+      upstream = await fetch(OPENROUTER_URL, {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${apiKey}`,
+          "Content-Type": "application/json",
+          "HTTP-Referer": "https://github.com/",
+          "X-Title": "AI Playbook Vlaanderen - Interactieve gids",
+        },
+        body: JSON.stringify({
+          model: body.model || DEFAULT_MODEL,
+          messages,
+          stream: true,
+          temperature: 0.4,
+        }),
+      });
+    } catch (err) {
+      console.error("OpenRouter fetch threw:", err);
+      return jsonError(502, `OpenRouter fetch failed: ${(err as Error).message}`);
+    }
+
+    if (!upstream.ok || !upstream.body) {
+      const errText = await upstream.text().catch(() => "");
+      console.error("OpenRouter non-ok:", upstream.status, errText.slice(0, 500));
+      return jsonError(upstream.status, `OpenRouter error: ${errText.slice(0, 500)}`);
+    }
+
+    return new Response(upstream.body, {
+      headers: {
+        ...corsHeaders,
+        "content-type": "text/event-stream",
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+      },
+    });
+  } catch (err) {
+    console.error("Unhandled error in chat function:", err);
+    return jsonError(500, `Unhandled: ${(err as Error).message}`);
   }
-
-  // Lead-only ping (used by the email gate to register the user without sending a message).
-  if (body.kind === "lead") {
-    if (!body.email) return jsonError(400, "email required for lead kind");
-    await logLead(body.email, body.profile);
-    return jsonOk({ ok: true });
-  }
-
-  const apiKey = Deno.env.get("OPENROUTER_API_KEY");
-  if (!apiKey) return jsonError(500, "OPENROUTER_API_KEY is not configured on the server");
-
-  if (!body.messages || !Array.isArray(body.messages) || body.messages.length === 0) {
-    return jsonError(400, "messages[] is required");
-  }
-
-  // Best-effort lead log on every chat (idempotent — upsert on email).
-  if (body.email) logLead(body.email, body.profile).catch(() => {});
-
-  const systemPrompt = buildSystemPrompt(body);
-  const messages = [
-    { role: "system" as const, content: systemPrompt },
-    ...body.messages.filter((m) => m.role !== "system"),
-  ];
-
-  const upstream = await fetch(OPENROUTER_URL, {
-    method: "POST",
-    headers: {
-      "Authorization": `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-      "HTTP-Referer": "https://github.com/", // generic — override in deploy if you have a custom URL
-      "X-Title": "AI Playbook Vlaanderen — Interactieve gids",
-    },
-    body: JSON.stringify({
-      model: body.model || DEFAULT_MODEL,
-      messages,
-      stream: true,
-      temperature: 0.4,
-    }),
-  });
-
-  if (!upstream.ok || !upstream.body) {
-    const errText = await upstream.text().catch(() => "");
-    return jsonError(upstream.status, `OpenRouter error: ${errText.slice(0, 500)}`);
-  }
-
-  return new Response(upstream.body, {
-    headers: {
-      ...corsHeaders,
-      "content-type": "text/event-stream",
-      "cache-control": "no-cache",
-      "connection": "keep-alive",
-    },
-  });
 });

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Generate 2-4 sentence Dutch summaries for every section in playbook.json
-// via OpenRouter. Output: web/data/summaries.json keyed by section id.
+// via OpenRouter. Output: data/summaries.json keyed by section id.
 //
 // Usage:
 //   1) Rotate your OpenRouter key, then create a .env file in project root:
@@ -15,7 +15,7 @@ import url from "node:url";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const DATA = path.join(ROOT, "web", "data");
+const DATA = path.join(ROOT, "data");
 const PLAYBOOK = path.join(DATA, "playbook.json");
 const OUT = path.join(DATA, "summaries.json");
 

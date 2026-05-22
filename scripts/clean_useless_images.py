@@ -1,4 +1,4 @@
-"""Remove PDF-artifact images from web/img and web/data/playbook.json.
+"""Remove PDF-artifact images from img/ and data/playbook.json.
 
 A PDF-artifact image is detected as: <= 5 unique colors AND filesize < 10 KB.
 These are the black callout shapes, arrows, and dividers extracted from the PDF.
@@ -10,8 +10,8 @@ from PIL import Image
 import json
 
 ROOT = Path(r"C:\Users\DavidLoos\Desktop\AI Playbook")
-IMG_DIR = ROOT / "web" / "img"
-JSON_PATH = ROOT / "web" / "data" / "playbook.json"
+IMG_DIR = ROOT / "img"
+JSON_PATH = ROOT / "data" / "playbook.json"
 
 MAX_COLORS = 5
 MAX_SIZE = 10000

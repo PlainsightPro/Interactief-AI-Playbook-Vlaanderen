@@ -12,3 +12,6 @@ Thumbs.db
 /Winterfest/
 /winterfest-2025-assets/
 /.claude/
+
+# Supabase CLI local state
+supabase/.temp/

@@ -32,7 +32,7 @@ gebruiker zelf een stappenplan samenstellen.
 ```
 
 De OpenRouter-key passeert nooit de browser. De Supabase anon-key staat in
-`web/config.js` en is **publiek** veilig.
+`config.js` en is **publiek** veilig.
 
 ## Repository indeling
 
@@ -46,34 +46,33 @@ De OpenRouter-key passeert nooit de browser. De Supabase anon-key staat in
 ├── scripts/
 │   ├── extract.py             ← PDF → playbook.json + img/ (Kernactiviteiten)
 │   ├── extract_introductie.py ← PDF → _introductie_text.txt (Introductie)
-│   └── generate_summaries.mjs ← OpenRouter → web/data/summaries.json
+│   └── generate_summaries.mjs ← OpenRouter → data/summaries.json
 ├── supabase/
 │   ├── config.toml
 │   └── functions/chat/index.ts ← Edge Function (Deno/TypeScript)
-└── web/                        ← Statisch front-end. Deze map publiceer je.
-    ├── index.html              ← Landing (hero + disclaimer + CTA)
-    ├── quiz.html               ← 6-vragen quiz
-    ├── playbook.html           ← Per-profiel matrix + AI-paneel
-    ├── over.html               ← Volledige disclaimer + privacy
-    ├── styles.css              ← Design-system (Vlaanderen tokens)
-    ├── config.js               ← ← EDIT VÓÓR DEPLOY (Supabase URL + anon key)
-    ├── src/                    ← ES-modules (geen build)
-    │   ├── main.js             ←   bootstrap (topbar/footer/Lenis)
-    │   ├── state.js            ←   localStorage state-store
-    │   ├── data.js             ←   JSON loaders + activity walker
-    │   ├── email.js            ←   business-email validatie + blocklist
-    │   ├── icons.js            ←   inline SVG iconen + leeuw
-    │   ├── particles.js        ←   Three.js hero-drift
-    │   ├── quiz.js             ←   quiz UI + scoring
-    │   ├── playbook.js         ←   matrix/phase view + filters
-    │   ├── chat.js             ←   AI-paneel + email gate + streaming
-    │   └── utils.js            ←   $/el/storage/debounce/reveal
-    ├── data/
-    │   ├── playbook.json       ← Kernactiviteiten (volledig gestructureerd)
-    │   ├── introductie.json    ← Introductie: quiz, pijlers, fasen, profielen
-    │   ├── summaries.json      ← Optioneel: AI-summary per sectie (begint leeg)
-    │   └── prepared_questions.json ← Starter-prompts voor het AI-paneel
-    └── img/                    ← Geëxtraheerde figuren + 4× stappenplan-PNG
+├── index.html                  ← Landing (hero + disclaimer + CTA)
+├── quiz.html                   ← 6-vragen quiz
+├── playbook.html               ← Per-profiel matrix + AI-paneel
+├── over.html                   ← Volledige disclaimer + privacy
+├── styles.css                  ← Design-system (Vlaanderen tokens)
+├── config.js                   ← ← EDIT VÓÓR DEPLOY (Supabase URL + anon key)
+├── src/                        ← ES-modules (geen build)
+│   ├── main.js                 ←   bootstrap (topbar/footer/Lenis)
+│   ├── state.js                ←   localStorage state-store
+│   ├── data.js                 ←   JSON loaders + activity walker
+│   ├── email.js                ←   business-email validatie + blocklist
+│   ├── icons.js                ←   inline SVG iconen + leeuw
+│   ├── particles.js            ←   Three.js hero-drift
+│   ├── quiz.js                 ←   quiz UI + scoring
+│   ├── playbook.js             ←   matrix/phase view + filters
+│   ├── chat.js                 ←   AI-paneel + email gate + streaming
+│   └── utils.js                ←   $/el/storage/debounce/reveal
+├── data/
+│   ├── playbook.json           ← Kernactiviteiten (volledig gestructureerd)
+│   ├── introductie.json        ← Introductie: quiz, pijlers, fasen, profielen
+│   ├── summaries.json          ← Optioneel: AI-summary per sectie (begint leeg)
+│   └── prepared_questions.json ← Starter-prompts voor het AI-paneel
+└── img/                        ← Geëxtraheerde figuren + 4× stappenplan-PNG
 ```
 
 ## Setup (eerste keer)
@@ -86,12 +85,12 @@ Vereist: Python 3 met `pymupdf` (`pip install pymupdf`).
 # Kernactiviteiten → playbook.json + img/*.png
 python scripts/extract.py
 
-# Introductie (alleen ter referentie — de quiz/pijlers leven al in web/data/introductie.json)
+# Introductie (alleen ter referentie — de quiz/pijlers leven al in data/introductie.json)
 python scripts/extract_introductie.py
 ```
 
 `introductie.json` is met de hand gestructureerd op basis van de PDF-tekst.
-Als de bron-PDF significant verandert, werk dan handmatig `web/data/introductie.json` bij.
+Als de bron-PDF significant verandert, werk dan handmatig `data/introductie.json` bij.
 
 ### 2. AI-samenvattingen genereren (optioneel maar aanbevolen)
 
@@ -105,7 +104,7 @@ cp .env.example .env
 node scripts/generate_summaries.mjs
 ```
 
-Dit vult `web/data/summaries.json` met 2-4 zinnen Nederlands per sectie. Het script
+Dit vult `data/summaries.json` met 2-4 zinnen Nederlands per sectie. Het script
 is idempotent — opnieuw draaien is veilig. Zonder dit bestand toont de frontend een
 fallback-samenvatting (eerste alinea uit de PDF).
 
@@ -162,7 +161,7 @@ URL toe (bv. `https://<jouw-user>.github.io`).
 
 ### 4. Frontend configureren
 
-Open `web/config.js` en vul aan:
+Open `config.js` en vul aan:
 
 ```js
 window.AI_PLAYBOOK_CONFIG = {
@@ -183,24 +182,24 @@ window.AI_PLAYBOOK_CONFIG = {
 ### 5. Lokaal draaien
 
 ```bash
-python -m http.server -d web 8000
+python -m http.server 8000
 # of
-npx serve web
+npx serve .
 ```
 
 Open <http://localhost:8000>.
 
 ### 6. Deploy naar GitHub Pages
 
-Een eenvoudige aanpak — publiceer de `web/` map vanaf `main`:
+Een eenvoudige aanpak — publiceer de root vanaf `main`:
 
 1. Maak een nieuwe GitHub-repo en push deze codebase.
-2. Repo Settings → Pages → Source: `Deploy from a branch` → branch `main`, folder `/web`.
+2. Repo Settings → Pages → Source: `Deploy from a branch` → branch `main`, folder `/ (root)`.
 3. Wacht ~1 minuut. Bezoek `https://<user>.github.io/<repo>/`.
 4. Voeg die URL toe als CORS-origin in Supabase (stap 3c).
 
 > Optioneel: gebruik een custom domain via Settings → Pages → Custom domain.
-> Zet `web/CNAME` met je domain als je daarvoor kiest.
+> Zet `CNAME` in de root met je domain als je daarvoor kiest.
 
 ## Veiligheid in één alinea
 
@@ -217,14 +216,14 @@ zijn — opgeslagen in `playbook_leads`.
 
 | Wat | Waar |
 |-----|------|
-| Andere LLM | `MODEL` in `web/config.js` (frontend default) of `DEFAULT_MODEL` in `supabase/functions/chat/index.ts` |
+| Andere LLM | `MODEL` in `config.js` (frontend default) of `DEFAULT_MODEL` in `supabase/functions/chat/index.ts` |
 | Andere system-prompt | `buildSystemPrompt()` in `supabase/functions/chat/index.ts` |
-| Andere kleuren / fonts | CSS custom properties bovenaan `web/styles.css` |
-| Andere quiz-vragen | `web/data/introductie.json` (`quiz.questions[]`) |
-| Andere starter-prompts | `web/data/prepared_questions.json` |
-| Andere geblokkeerde e-maildomeinen | `BLOCKED_DOMAINS` in `web/src/email.js` |
-| Disclaimer of privacy-tekst | `web/over.html` (en de Layer-1 kaart in `web/index.html`) |
-| Bewaartermijn e-mails | `RETENTION_MONTHS` in `web/config.js` + over.html-tekst |
+| Andere kleuren / fonts | CSS custom properties bovenaan `styles.css` |
+| Andere quiz-vragen | `data/introductie.json` (`quiz.questions[]`) |
+| Andere starter-prompts | `data/prepared_questions.json` |
+| Andere geblokkeerde e-maildomeinen | `BLOCKED_DOMAINS` in `src/email.js` |
+| Disclaimer of privacy-tekst | `over.html` (en de Layer-1 kaart in `index.html`) |
+| Bewaartermijn e-mails | `RETENTION_MONTHS` in `config.js` + over.html-tekst |
 
 ## Bekende beperkingen
 

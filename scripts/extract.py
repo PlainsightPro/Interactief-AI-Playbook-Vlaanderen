@@ -1,8 +1,8 @@
 """Extract structured content + images from the AI Playbook PDF.
 
 Output:
-  web/data/playbook.json  - hierarchical tree of pillars/activities with text & image refs
-  web/img/p{N}-{idx}.{ext} - extracted images
+  data/playbook.json  - hierarchical tree of pillars/activities with text & image refs
+  img/p{N}-{idx}.{ext} - extracted images
 """
 
 import json
@@ -13,9 +13,8 @@ import fitz  # PyMuPDF
 
 ROOT = Path(__file__).resolve().parent.parent
 PDF_PATH = Path(r"C:\Users\DavidLoos\Downloads\AI_Playbook_kernactiviteiten_wlvopb (1).pdf")
-WEB = ROOT / "web"
-IMG_DIR = WEB / "img"
-DATA_DIR = WEB / "data"
+IMG_DIR = ROOT / "img"
+DATA_DIR = ROOT / "data"
 IMG_DIR.mkdir(parents=True, exist_ok=True)
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
